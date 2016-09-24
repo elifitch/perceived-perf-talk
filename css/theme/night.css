@@ -45,6 +45,7 @@ body {
   letter-spacing: -0.03em;
   text-transform: none;
   text-shadow: none;
+  font-style: normal;
   word-wrap: break-word; }
 
 .reveal h1 {

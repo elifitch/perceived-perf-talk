@@ -53,6 +53,7 @@ body {
   letter-spacing: normal;
   text-transform: uppercase;
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  font-style: normal;
   word-wrap: break-word; }
 
 .reveal h1 {

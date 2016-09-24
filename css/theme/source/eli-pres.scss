@@ -1,0 +1,101 @@
+/**
+ * Beige theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/league-gothic/league-gothic.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: #fafafa;
+$headingColor: #fafafa;
+$headingTextShadow: none;
+$backgroundColor: #222;
+$linkColor: #8b743d;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(79, 64, 28, 0.99);
+$headingFont: 'Brandon Grotesque', Impact, sans-serif;
+$headingFontStyle: italic;
+$headingFontWeight: 600;
+$headingTextTransform: none;
+$headingLineHeight: 1;
+
+// Background generator
+// @mixin bodyBackground() {
+// 	@include radial-gradient( rgba(247,242,211,1), rgba(255,255,255,1) );
+// }
+/*********************************************
+ * CUSTOM VARS
+ *********************************************/
+
+$color-pink: #ff4cff;
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+ body {
+	font-family: $headingFont !important;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+	// position: relative;
+	// display: inline-block;
+	// &:after {
+	// 	content: '';
+	// 	width: 100%;
+	// 	height: .1em;
+	// 	bottom: 0em;
+	// 	left: -.05em;
+	// 	z-index: -1;
+	// 	transform: skew(-7.77deg);
+	// 	border-radius: .01em;
+	// 	background: $color-pink;
+	// 	position: absolute;
+	// }
+}
+.reveal h1 {
+	margin-bottom: 0.5em;
+}
+.reveal .footer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 0em;
+	font-style: italic;
+	color: rgba(0,0,0,.3);
+	font-family: $headingFont !important;
+	font-weight: 800;
+}
+.reveal .footer__logo {
+	font-size: 1.4em;
+	color: inherit;
+}
+.reveal .footer__social {
+	font-size: 1.2em;
+	color: inherit;
+}
