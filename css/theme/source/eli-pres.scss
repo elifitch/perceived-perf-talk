@@ -20,7 +20,7 @@
 $mainColor: #fafafa;
 $headingColor: #fafafa;
 $headingTextShadow: none;
-$backgroundColor: #222;
+$backgroundColor: #171717;
 $linkColor: #8b743d;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(79, 64, 28, 0.99);
@@ -29,6 +29,7 @@ $headingFontStyle: italic;
 $headingFontWeight: 600;
 $headingTextTransform: none;
 $headingLineHeight: 1;
+$mainFont: 'Pinopolis-Regular', sans-serif;
 
 // Background generator
 // @mixin bodyBackground() {
@@ -51,8 +52,11 @@ $color-pink: #ff4cff;
 /*********************************************
  * HEADERS
  *********************************************/
+ * {
+ 	-webkit-font-smoothing: antialiased;
+ }
  body {
-	font-family: $headingFont !important;
+	// font-family: $headingFont !important;
 }
 
 .reveal h1,
@@ -61,6 +65,7 @@ $color-pink: #ff4cff;
 .reveal h4,
 .reveal h5,
 .reveal h6 {
+	font-family: $headingFont !important;
 	// position: relative;
 	// display: inline-block;
 	// &:after {
@@ -79,6 +84,61 @@ $color-pink: #ff4cff;
 .reveal h1 {
 	margin-bottom: 0.5em;
 }
+.reveal section img {
+	box-shadow: 0 0.2em 1em 0em rgba(0, 0, 0, 0.2);
+	border: none;
+}
+
+/*********************************************
+ * List
+ *********************************************/
+.reveal {
+	.list {
+		text-align: left;
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		// font-family: $headingFont;
+		margin: 0 auto;
+		ul {
+			margin: 0;
+			list-style: none;
+			padding-top: 0.5em;
+		}
+		li {
+			margin-bottom: 0.5em;
+		}
+	}
+	.list__heading {
+		text-align: left;
+		position: relative;
+		display: inline;
+		background-size: 100% 0.15em;;
+		background-repeat: no-repeat;
+		background-position: 0 1em;
+		overflow: hidden;
+		font-family: $headingFont;
+		background-image: linear-gradient(to bottom, $color-pink 0%, $color-pink 100%);
+		// &:after {
+		// 	content: '';
+		// 	width: 100%;
+		// 	height: .1em;
+		// 	bottom: 0em;
+		// 	left: -.05em;
+		// 	z-index: -1;
+		// 	transform: skew(-7.77deg);
+		// 	border-radius: .01em;
+		// 	background: -pink;
+		// 	position: absolute;
+		// }
+	}
+}
+
+
+
+/*********************************************
+ * FOOTER
+ *********************************************/
 .reveal .footer {
 	width: 100%;
 	display: flex;
@@ -87,7 +147,7 @@ $color-pink: #ff4cff;
 	position: absolute;
 	bottom: 0em;
 	font-style: italic;
-	color: rgba(0,0,0,.3);
+	color: rgba(0,0,0,.4);
 	font-family: $headingFont !important;
 	font-weight: 800;
 }
@@ -98,4 +158,16 @@ $color-pink: #ff4cff;
 .reveal .footer__social {
 	font-size: 1.2em;
 	color: inherit;
+}
+
+
+
+/*********************************************
+ * UTILS
+ *********************************************/
+.u-text-left {
+	text-align: left;
+}
+.u-inline-block {
+	display: inline-block;
 }

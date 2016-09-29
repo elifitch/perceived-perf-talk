@@ -20,3 +20,13 @@
 
 Notes:
 * An idle tab is a terrible thing to waste. Always be thinking about what can be loaded in the background.
+* Research on queuing has shown that, on average, people overestimate how long they’ve waited in a line by about 36 percent. http://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html?_r=0
+
+## Structure issues
+* Objective vs subjective -> optimize for objective -> this bad, focus on subjective -> straight into waits that feel longer
+* Objective vs subjective -> optimize for objective -> this bad, focus on subjective -> How we perceive time generally (active vs passive) -> how we can use this to our advantage -> talk about unexepcted, uncertain, unexplained in terms of how to make passive waits less painful -> real trick is in stretching active waits BOOOOOOOOM THIS IS THE PATTERN 
+
+
+
+
+

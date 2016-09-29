@@ -25,10 +25,136 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>Percieved Performance</h1>
+					<h1>Perceived Performance</h1>
 					<h3>The only kind that really matters.</h3>
 				</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Hi, I'm Eli.</h2>
+				</section>
+				<section>
+					<div class="list">
+						<h2 class="list__heading">So lets talk about Perceived Perf</h2>
+						<ul>
+							<li class="fragment">Not focused on objective performance</li>
+							<li class="fragment">How humans perceive time</li>
+							<li class="fragment">The basics of common perceived performance techniques</li>
+							<li class="fragment">Predictive design</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>Web Performance<br>
+						<span class="fragment">is a matter of time.</span>
+						<aside class="notes">We talk about web performance in terms of time. Seconds to first paint, latency, download speed, etc </aside>
+					</h2>
+				</section>
+				<section>
+					<h2>Time is a funny thing.</h2>
+					<aside class="notes">It means different things to different ppl</aside>
+				</section>
+				<section>
+					<h2>
+						<span class="fragment">Objective time</span>
+						<br>vs.<br>
+						<span class="fragment">Subjective time</span>
+					</h2>
+				</section>
+				<section>
+					<h2>
+						We optimize for<br>objective time
+					</h2>
+					<aside class="notes">Objective time is easy to measure, that's why we focus on it.</aside>
+				</section>
+				<section>
+					<h3>
+						<span class="fragment">0.1 sec: instantaneous</span><br><br>
+						<span class="fragment">1 sec: no interruption</span><br><br>
+						<span class="fragment">10 sec: attention lost</span>
+					</h3>
+					<aside class="notes">Jakob Nielsen</aside>
+				</section>
+				<section>
+					<h2>
+						Focus on the subjective.
+					</h2>
+					<aside class="notes">The types of scenarios considered in many web performance studies/examples are really clean slate/pie in the sky scenarios that don't acknowledge the constraints within which we as devs operate. Sometimes you don't have a great deal of control over asset delivery, your application requires long asynchronous processes that cannot be easily improved, etc. We sell ourselves short by focusing on improving objective time when we can sometimes make much greater strides to how fast our apps &amp; sites *feel* without improving their actual speed at all.</aside>
+				</section>
+				<section>
+					<h2>
+						<span class="fragment">Active phase</span>
+						<br>vs.<br>
+						<span class="fragment">Passive phase</span>
+					</h2>
+					<aside class="notes">The types of scenarios considered in many web performance studies/examples are really clean slate/pie in the sky scenarios that don't acknowledge the constraints within which we as devs operate. Sometimes you don't have a great deal of control over asset delivery, your application requires long asynchronous processes that cannot be easily improved, etc. We sell ourselves short by focusing on improving objective time when we can sometimes make much greater strides to how fast our apps &amp; sites *feel* without improving their actual speed at all.</aside>
+				</section>
+				<section>
+					<img src="img/airplane.jpg">
+				</section>
+				<section>
+					<img src="img/baggage-claim-sleep.gif">
+				</section>
+				<section>
+					<h1>🏃🏃🏃🏃🏃</h1>
+				</section>
+				<section>
+					<img src="img/baggage-claim-kramer.gif">
+				</section>
+				<section>
+					<!-- <h4>
+						<span class="fragment">Unoccupied waits feel longer than occupied waits.</span><br>
+						<span class="fragment">Pre-process waits feel longer than in-process waits.</span><br>
+						<span class="fragment">Uncertain waits feel longer than certain waits.</span><br>
+						<span class="fragment">Unexpected waits feel longer than expected waits.</span><br>
+						<span class="fragment">Unexplained waits feel longer than explained waits.</span>
+					</h4> -->
+					<h2>
+						<span class="fragment">Unexpected</span>
+						<span class="fragment">Uncertain</span>
+						<span class="fragment">Unexplained</span>
+						<span class="fragment">Unoccupied</span>
+					</h2>
+					<aside class="notes">
+					TODO: fix this and the following sections probably?
+
+					Tremendous body of research into how humans perceive time, but very little of it has been specifically angled at understanding computer interfaces. A scientist(?) named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster. 4 Uns.</aside>
+				</section>
+				<section>
+					<div class="list">
+						<h2 class="list__heading">
+							Give users a heads up
+						</h2>
+						<ul>
+							<li class="fragment">Time long actions for when they're not interrupting users behavior</li>
+							<li class="fragment">Give users a choice</li>
+							<li class="fragment">This might mean adjusting user flows</li>
+						</ul>
+					</div>
+
+					<aside class="notes">
+						Everyone's had an experience ordering a meal that's supposed to be quick, and when it takes forever it's *extra* annoying. When expecting something quick and it takes a long time, you're violating user's trust and defying their expectation.  They haven't mentally prepared for the wait involved, and so they're left watching the proverbial tea kettle.
+					</aside>
+				</section>
+				<section>
+					<div class="list">
+						<h2 class="list__heading">
+							Give users certainty
+						</h2>
+						<ul>
+							<!-- <li class="fragment">Progress bars!</li> -->
+
+							<li>
+								<span class="fragment">P</span><span class="fragment">rogr</span><span class="fragment">ess </span><span class="fragment">ba</span><span class="fragment">...</span><span class="fragment">.</span><span class="fragment">.</span><span class="fragment">rs!</span>
+							</li>
+							<li class="fragment">Certainty cuts both ways.</li>
+						</ul>
+					</div>
+
+					<aside class="notes">
+						Honestly?  Someone much smarter than me could probably give an entire talk on progress bars alone. Progress bars with a counter running band animation have the appearance of running faster [[TODO MEDIA: include anim]] 
+					</aside>
+				</section>
+
+
 				<div class="footer">
 					<a class="footer__logo">Eli.wtf</a>
 					<a class="footer__social">@elifitch</a>
@@ -43,6 +169,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+				controls: false,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [

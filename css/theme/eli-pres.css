@@ -12,11 +12,11 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #222;
-  background-color: #222; }
+  background: #171717;
+  background-color: #171717; }
 
 .reveal {
-  font-family: "Lato", sans-serif;
+  font-family: "Pinopolis-Regular", sans-serif;
   font-size: 36px;
   font-weight: normal;
   color: #fafafa; }
@@ -291,12 +291,54 @@ body {
 /*********************************************
  * HEADERS
  *********************************************/
-body {
+* {
+  -webkit-font-smoothing: antialiased; }
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
   font-family: "Brandon Grotesque", Impact, sans-serif !important; }
 
 .reveal h1 {
   margin-bottom: 0.5em; }
 
+.reveal section img {
+  box-shadow: 0 0.2em 1em 0em rgba(0, 0, 0, 0.2);
+  border: none; }
+
+/*********************************************
+ * List
+ *********************************************/
+.reveal .list {
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin: 0 auto; }
+  .reveal .list ul {
+    margin: 0;
+    list-style: none;
+    padding-top: 0.5em; }
+  .reveal .list li {
+    margin-bottom: 0.5em; }
+
+.reveal .list__heading {
+  text-align: left;
+  position: relative;
+  display: inline;
+  background-size: 100% 0.15em;
+  background-repeat: no-repeat;
+  background-position: 0 1em;
+  overflow: hidden;
+  font-family: "Brandon Grotesque", Impact, sans-serif;
+  background-image: linear-gradient(to bottom, #ff4cff 0%, #ff4cff 100%); }
+
+/*********************************************
+ * FOOTER
+ *********************************************/
 .reveal .footer {
   width: 100%;
   display: flex;
@@ -305,7 +347,7 @@ body {
   position: absolute;
   bottom: 0em;
   font-style: italic;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.4);
   font-family: "Brandon Grotesque", Impact, sans-serif !important;
   font-weight: 800; }
 
@@ -316,3 +358,12 @@ body {
 .reveal .footer__social {
   font-size: 1.2em;
   color: inherit; }
+
+/*********************************************
+ * UTILS
+ *********************************************/
+.u-text-left {
+  text-align: left; }
+
+.u-inline-block {
+  display: inline-block; }
