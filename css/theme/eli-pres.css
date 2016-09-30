@@ -359,6 +359,9 @@ body {
   font-size: 1.2em;
   color: inherit; }
 
+.emoji {
+  font-style: normal !important; }
+
 /*********************************************
  * UTILS
  *********************************************/
