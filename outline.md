@@ -24,7 +24,22 @@ Notes:
 
 ## Structure issues
 * Objective vs subjective -> optimize for objective -> this bad, focus on subjective -> straight into waits that feel longer
-* Objective vs subjective -> optimize for objective -> this bad, focus on subjective -> How we perceive time generally (active vs passive) -> how we can use this to our advantage -> talk about unexepcted, uncertain, unexplained in terms of how to make passive waits less painful -> real trick is in stretching active waits BOOOOOOOOM THIS IS THE PATTERN 
+* Objective vs subjective -> optimize for objective -> this bad, focus on subjective -> How we perceive time generally (active vs passive) -> how we can use this to our advantage -> talk about unexepcted, uncertain, unexplained in terms of how to make passive waits less painful -> real trick is in stretching active waits BOOOOOOOOM THIS IS THE PATTERN \
+
+## TITLE SHITS
+New Title:
+Understanding Perceived Performance
+
+Description: 
+We tend to think of web performance in purely objective terms: seconds to first paint, miliseconds of latency, and so on.  We build apps to be as objectively as speedy as possible, and blindly hope that fast feels fast.  Unfortunately, as anyone who's ever waited in line at the DMV can tell you, humans are terrible at judging time.
+
+If we instead shift to directly address perceived performance, we can make our creations feel even faster than they already are.  By exploiting how humans perceive time, we can build experiences that feel immediate & satisfying.
+
+What we'll cover:
+* Why solely pursuing objective web performance is a flawed paradigm
+* How humans perceive time in terms of active and passive phases
+* How to make passive waiting time less apparent
+* Predictive design, the sneaky art of preparing for a user's next action before they take it to reduce or even eliminate perceived waiting time
 
 
 
