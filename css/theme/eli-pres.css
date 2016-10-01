@@ -3,7 +3,6 @@
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-@import url(../../lib/font/league-gothic/league-gothic.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /*********************************************
  * CUSTOM VARS
@@ -288,12 +287,12 @@ body {
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
-/*********************************************
- * HEADERS
- *********************************************/
 * {
   -webkit-font-smoothing: antialiased; }
 
+/*********************************************
+ * HEADERS
+ *********************************************/
 .reveal h1,
 .reveal h2,
 .reveal h3,
@@ -319,6 +318,7 @@ body {
   margin: 0 auto;
   margin: 0 auto; }
   .reveal .list ul {
+    width: 100%;
     margin: 0;
     list-style: none;
     padding-top: 0.5em; }
@@ -359,9 +359,6 @@ body {
   font-size: 1.2em;
   color: inherit; }
 
-.emoji {
-  font-style: normal !important; }
-
 /*********************************************
  * UTILS
  *********************************************/
@@ -370,3 +367,25 @@ body {
 
 .u-inline-block {
   display: inline-block; }
+
+.u-pt-04 {
+  padding-top: 0.4em !important; }
+
+.u-underline {
+  position: relative;
+  display: inline;
+  background-size: 100% 0.15em;
+  background-repeat: no-repeat;
+  background-position: 0 1em;
+  overflow: hidden;
+  font-family: "Brandon Grotesque", Impact, sans-serif;
+  background-image: linear-gradient(to bottom, #ff4cff 0%, #ff4cff 100%); }
+
+.emoji {
+  font-style: normal !important; }
+
+/*********************************************
+ * State modes
+ *********************************************/
+html.footer-fade .footer {
+  color: rgba(0, 0, 0, 0.2); }
