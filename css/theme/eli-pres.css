@@ -334,7 +334,8 @@ body {
   background-position: 0 1em;
   overflow: hidden;
   font-family: "Brandon Grotesque", Impact, sans-serif;
-  background-image: linear-gradient(to bottom, #ff4cff 0%, #ff4cff 100%); }
+  background-image: linear-gradient(to bottom, #ff4cff 0%, #ff4cff 100%);
+  text-shadow: 0px 0.025em 0.1em rgba(0, 0, 0, 0.3); }
 
 /*********************************************
  * FOOTER
@@ -379,7 +380,8 @@ body {
   background-position: 0 1em;
   overflow: hidden;
   font-family: "Brandon Grotesque", Impact, sans-serif;
-  background-image: linear-gradient(to bottom, #ff4cff 0%, #ff4cff 100%); }
+  background-image: linear-gradient(to bottom, #ff4cff 0%, #ff4cff 100%);
+  text-shadow: 0px 0.025em 0.1em rgba(0, 0, 0, 0.3); }
 
 .emoji {
   font-style: normal !important; }
