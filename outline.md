@@ -24,23 +24,16 @@ Notes:
 
 ## Structure issues
 * Objective vs subjective -> optimize for objective -> this bad, focus on subjective -> straight into waits that feel longer
-* Objective vs subjective -> optimize for objective -> this bad, focus on subjective -> How we perceive time generally (active vs passive) -> how we can use this to our advantage -> talk about unexepcted, uncertain, unexplained in terms of how to make passive waits less painful -> real trick is in stretching active waits BOOOOOOOOM THIS IS THE PATTERN \
+* Objective vs subjective -> optimize for objective -> this bad, focus on subjective -> How we perceive time generally (active vs passive) -> how we can use this to our advantage -> talk about unexepcted, uncertain, unexplained in terms of how to make passive waits less painful -> real trick is in stretching active waits BOOOOOOOOM THIS IS THE PATTERN
 
-## TITLE SHITS
-New Title:
-Understanding Perceived Performance
+## Structure issues 2
+* Right now: Active vs passive -> bunch of examples like waiting for a cab, or waiting in traffic -> then what makes (passive) waits feel longer; 4 uns -> then back to active vs. passive with the airport story
 
-Description: 
-We tend to think of web performance in purely objective terms: seconds to first paint, miliseconds of latency, and so on.  We build apps to be as objectively as speedy as possible, and blindly hope that fast feels fast.  Unfortunately, as anyone who's ever waited in line at the DMV can tell you, humans are terrible at judging time.
 
-If we instead shift to directly address perceived performance, we can make our creations feel even faster than they already are.  By exploiting how humans perceive time, we can build experiences that feel immediate & satisfying.
+## Bio
+Gregor Adams is a self-taught web developer with a strong focus on CSS. He works as a web-developer and front-end architect at CodeFights in San Francisco. Gregor is very active on CodePen where he shows a lot of abstract CSS experiments. While he has no special focus when is comes to CSS his most impressive works are related to 3d shapes or fractals. Most of his works are pure CSS. Even when he needs interaction in an experiment his first pick is to try to implement it in CSS. Gregor speaks at conferences and meetups with a strong urge to teach or help other developers. He pushes his own limits every day, staying up to date with the latest specs, finding fixes for browser quirks or trying to do the impossible.
 
-What we'll cover:
-* Why solely pursuing objective web performance is a flawed paradigm
-* How humans perceive time in terms of active and passive phases
-* How to make passive waiting time less apparent
-* Predictive design, the sneaky art of preparing for a user's next action before they take it to reduce or even eliminate perceived waiting time
-
+Eli Fitch is a front end developer with a passion for web performance, animation and all things 3D. He leads a team of amazing engineers making a WebGL event diagramming app at Social Tables, a startup in his hometown of Washington, DC.  He also organizes the DC CodePen Meetup, and dabbles in design, 3D art & game development.
 
 
 
