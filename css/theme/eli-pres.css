@@ -391,3 +391,8 @@ body {
  *********************************************/
 html.footer-fade .footer {
   color: rgba(0, 0, 0, 0.2); }
+
+.reveal section .st-logo {
+  width: 33%;
+  background: transparent;
+  box-shadow: none; }

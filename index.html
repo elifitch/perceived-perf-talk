@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Understanding Perceived Performance</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/eli-pres.css">
@@ -30,6 +30,10 @@
 				</section>
 				<section>
 					<h2>Hi, I'm Eli.</h2>
+					<h4 class="fragment">I make dumb stuff on the internet</h4>
+				</section>
+				<section>
+					<img class="st-logo" src="img/st.svg" alt="">
 				</section>
 				<section>
 					<div class="list">
@@ -53,6 +57,24 @@
 					<aside class="notes">It means different things to different ppl</aside>
 				</section>
 				<section>
+					<img src="img/lol.gif" alt="">
+					<aside class="notes">It means different things to different ppl</aside>
+				</section>
+				<section>
+					<h1 class="emoji">🤔</h1>
+					<aside class="notes">It means different things to different ppl</aside>
+				</section>
+				<section>
+					<h2>Time is a funny thing.</h2>
+					<aside class="notes">
+						It means different things to different ppl.
+
+						It's hard to measure.
+
+						Heck maybe even that one stoner friend Travis doesn't even think time exists...man.
+					</aside>
+				</section>
+				<section>
 					<h2>
 						<span class="fragment">Objective time</span>
 						<br>vs.<br>
@@ -60,18 +82,23 @@
 					</h2>
 				</section>
 				<section>
-					<h2>
-						We optimize for<br>objective time
-					</h2>
-					<aside class="notes">Objective time is easy to measure, that's why we focus on it.</aside>
+					<h2>We optimize for<br>objective time</h2>
+					<aside class="notes">
+						Objective time is easy to measure, that's why we focus on it.
+
+						But if the goal is to make our shit feel fast, it's not very efficient.
+					</aside>
 				</section>
 				<section>
-					<h3>
+					<!-- <h3>
 						<span class="fragment">0.1 sec: instantaneous</span><br><br>
 						<span class="fragment">1 sec: no interruption</span><br><br>
 						<span class="fragment">10 sec: attention lost</span>
 					</h3>
-					<aside class="notes">Jakob Nielsen</aside>
+					<aside class="notes">Jakob Nielsen</aside> -->
+					<h2>Time differences of <span class="u-underline">20%</span> or less are imperceptible</h2>
+					<p>source???</p>
+					<aside class="notes">source????</aside>
 				</section>
 				<section>
 					<h2>
@@ -142,11 +169,16 @@
 				<section>
 					<div class="list">
 						<h2 class="list__heading">
-							[[Perceived wait factors]]
+							What makes time feel longer
 						</h2>
-						<ul>
+						<!-- <ul>
 							<li class="fragment">Unexpected</li>
 							<li class="fragment">Unexplained</li>
+							<li class="fragment">Uncertain</li>
+							<li class="fragment">Unoccupied</li>
+						</ul> -->
+						<ul>
+							<li class="fragment">Unexpected &amp; Unexplained</li>
 							<li class="fragment">Uncertain</li>
 							<li class="fragment">Unoccupied</li>
 						</ul>
@@ -154,10 +186,10 @@
 					<aside class="notes">
 						TODO fix slide style
 
-						Tremendous body of research into how humans perceive time, but very little of it has been specifically angled at understanding computer interfaces. A scientist(?) named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster. 4 Uns.
+						Tremendous body of research into how humans perceive time, but very little of it has been specifically angled at understanding computer interfaces. A science man named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster. 4 Uns.
 					</aside>
 				</section>
-				<section>
+				<!-- <section>
 					<h2 class="u-inline-block u-text-left">
 						<span class="u-underline">Unexpected</span>
 						<br>
@@ -168,7 +200,7 @@
 
 						Everyone's had an experience ordering a meal that's supposed to be quick, and when it takes forever it's *extra* annoying. When expecting something quick and it takes a long time, you're violating user's trust and defying their expectation.  They haven't mentally prepared for the wait involved, and so they're left watching the proverbial tea kettle.
 					</aside>
-				</section>
+				</section> -->
 				<section>
 					<div class="list">
 						<h2 class="list__heading">
@@ -189,7 +221,6 @@
 							Give users certainty
 						</h2>
 						<ul>
-							<li class="fragment">Active states</li>
 							<li>
 								<span class="fragment">P</span><span class="fragment">rogr</span><span class="fragment">ess </span><span class="fragment">ba</span><span class="fragment">...</span><span class="fragment">.</span><span class="fragment">.</span><span class="fragment">rs!</span>
 							</li>
@@ -198,8 +229,6 @@
 					</div>
 
 					<aside class="notes">
-						Use active states so users can be certain their action was registered. They get instantaneous feedback and the app feels faster.
-
 						Honestly?  Someone much smarter than me could probably give an entire talk on progress bars alone. Progress bars with a counter running band animation have the appearance of running faster [[TODO MEDIA: include anim]] 
 					</aside>
 				</section>
@@ -222,25 +251,41 @@
 				<section>
 					<p>Issues with the prev section (4uns): Very general, doesn't really give specific use cases. Like where do skeleton screens really fit in. Attention?
 					<br><br>
-					Might be better to have a list of tenets: like load what you can, as soon as you can (skeleton screens). Rather than "unoccupied" and segue into skeletons as an example</p>
+					Might be better to have a list of tenets: like load what you can, as soon as you can (skeleton screens). Rather than "unoccupied" and segue into skeletons as an example.
+					<br><br>
+					Where do active states and such fit in??
+					<br><br>
+					What about onclick vs onmousedown?????
+					</p>
+				</section>
+				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
+					<h2>Let's cheat</h2>
+					<p>[[[hate this structure]]]</p>
+				</section>
+				<section>
+					<h2>Render minimum viable layout.</h2>
+					<h2 class="fragment">Lazyload everything else as soon as sensible.</h2>
+					<aside class="notes">
+						
+					</aside>
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
 					<h2>Predictive<br>Design</h2>
 				</section>
 				<section>
 					<h2>Users aren't snowflakes.</h2>
+					<img class="fragment" src="img/snowflake.gif" alt="">
 					<h2 class="fragment">Behavior follows patterns.</h2>
-					<h2>[[[gif]]]</h2>
 					<aside class="notes">
 						restyle?
 					</aside>
 				</section>
-				<section>
+				<!-- <section>
 					<h2>If we know what a user's done, or is doing, we can guess at what they will do next.</h2>
 					<aside class="notes">
 						
 					</aside>
-				</section>
+				</section> -->
 				<section>
 					<h2>Why wait for a click?</h2>
 					<h2 class="fragment">Idle time is a terrible thing to waste.</h2>
@@ -249,11 +294,33 @@
 					</aside>
 				</section>
 				<section>
-					<h2>Render minimum viable layout.</h2>
-					<h2>Load everything else as soon as [[[makes sense]]]</h2>
-					<p>[[[wrong place]]]</p>
+					<p>form demo 1</p>
 					<aside class="notes">
-						This is in the wrong place
+						
+					</aside>
+				</section>
+				<section>
+					<p>form demo 2</p>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+				<section>
+					<p>button demo 1 webgl</p>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+				<section>
+					<p>button demo 2 webgl</p>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+				<section>
+					<h2>HTTP/2 will only make preloading more important.</h2>
+					<aside class="notes">
+						
 					</aside>
 				</section>
 
