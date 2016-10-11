@@ -396,3 +396,15 @@ html.footer-fade .footer {
   width: 33%;
   background: transparent;
   box-shadow: none; }
+
+.active {
+  transition: 0.2s all;
+  -webkit-user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 0.05em; }
+  .active:hover {
+    background: #ff4cff; }
+  .active:active {
+    background: #b200b2;
+    transform: translateY(10%); }

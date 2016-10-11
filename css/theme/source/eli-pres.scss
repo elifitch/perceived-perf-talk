@@ -21,3 +21,18 @@ html.footer-fade .footer {
 	background: transparent;
 	box-shadow: none;
 }
+
+.active {
+	transition: 0.2s all;
+	-webkit-user-select: none;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 0.05em;
+	&:hover {
+		background: $color-pink;
+	}
+	&:active {
+		background: darken($color-pink, 30%);
+		transform: translateY(10%);
+	}
+}
