@@ -29,6 +29,10 @@ Notes:
 ## Structure issues 2
 * Right now: Active vs passive -> bunch of examples like waiting for a cab, or waiting in traffic -> then what makes (passive) waits feel longer; 4 uns -> then back to active vs. passive with the airport story
 
+## What's my story
+* At the end of the day, waiting for things sucks, especially unoccupied waiting
+* Figure out new ways to occupy people or queueng up the next thing while folks are already occupied
+
 
 ## Bio
 Gregor Adams is a self-taught web developer with a strong focus on CSS. He works as a web-developer and front-end architect at CodeFights in San Francisco. Gregor is very active on CodePen where he shows a lot of abstract CSS experiments. While he has no special focus when is comes to CSS his most impressive works are related to 3d shapes or fractals. Most of his works are pure CSS. Even when he needs interaction in an experiment his first pick is to try to implement it in CSS. Gregor speaks at conferences and meetups with a strong urge to teach or help other developers. He pushes his own limits every day, staying up to date with the latest specs, finding fixes for browser quirks or trying to do the impossible.

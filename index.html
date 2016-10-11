@@ -98,7 +98,9 @@
 					<aside class="notes">Jakob Nielsen</aside> -->
 					<h2>Time differences of <span class="u-underline">20%</span> or less are imperceptible</h2>
 					<p>source???</p>
-					<aside class="notes">source????</aside>
+					<aside class="notes">
+						source????  Which means around 30% is needed to make it feel like a significant improvement.  30%, especially for a large codebase, can take a very long time to get there, and take a lot of resources.
+					</aside>
 				</section>
 				<section>
 					<h2>
@@ -106,9 +108,9 @@
 					</h2>
 					<aside class="notes">The types of scenarios considered in many web performance studies/examples are really clean slate/pie in the sky scenarios that don't acknowledge the constraints within which we as devs operate. Sometimes you don't have a great deal of control over asset delivery, your application requires long asynchronous processes that cannot be easily improved, etc. We sell ourselves short by focusing on improving objective time when we can sometimes make much greater strides to how fast our apps &amp; sites *feel* without improving their actual speed at all.</aside>
 				</section>
-				<section>
+				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
 					<h2>
-						[SECTION BREAK]
+						[[How we think<br>about time]]
 					</h2>
 				</section>
 				<section>
@@ -118,7 +120,7 @@
 						<span class="fragment">Passive phase</span>
 					</h2>
 					<aside class="notes">
-						
+						Active is when we are mentally engaged, and passive phase is when we are focusing on the waiting time. Watching the kettle.  A key point here is that active waiting times don't feel like waiting at all.
 					</aside>
 				</section>
 				<section>
@@ -132,14 +134,6 @@
 				</section>
 				<section>
 					<img src="img/baggage-claim-kramer.gif">
-				</section>
-				<section>
-					<h2>
-						Passive waits feel <span class="u-underline">36%</span> longer
-					</h2>
-					<aside class="notes">
-						Humans overestimate passive waits by 36%, per Richard Larson of MIT
-					</aside>
 				</section>
 				<section>
 					<h2>
@@ -159,16 +153,21 @@
 					</h2>
 					<aside class="notes">
 						Think of waiting for food. Hemming and hawwing deciding what you want to eat doesn't really feel like time stretches on for ages, but waiting for a server to bring your food somehow does.
+
+						On the web, the distinction can be filling out a form, and waiting for your order to be approved.
 					</aside>
+				</section>
+				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
+					<h2>
+						Lets un-suck passive time
+					</h2>
 				</section>
 				<section>
 					<h2>
-						<span class="fragment emoji">📍</span>
-						<br>vs.<br>
-						<span class="fragment emoji u-inline-block u-pt-04">🚕</span>
+						Passive waits feel <span class="u-underline">36%</span> longer
 					</h2>
 					<aside class="notes">
-						On the web, the distinction can be filling out a form, and waiting for your order to be approved. Or choosing your where to place your rideshare pin, and waiting for your car to arrive.
+						Humans overestimate passive waits by 36%, per Richard Larson of MIT
 					</aside>
 				</section>
 				<section>
@@ -221,6 +220,13 @@
 					</aside>
 				</section>
 				<section>
+					<p>picture of some modal with a button</p>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+				<section>
 					<div class="list">
 						<h2 class="list__heading">
 							Give users certainty
@@ -229,12 +235,17 @@
 							<li>
 								<span class="fragment">P</span><span class="fragment">rogr</span><span class="fragment">ess </span><span class="fragment">ba</span><span class="fragment">...</span><span class="fragment">.</span><span class="fragment">.</span><span class="fragment">rs!</span>
 							</li>
-							<li class="fragment">Easy to use, easy to overuse.</li>
+							<li class="fragment">Easy to overuse.</li>
+							<li class="fragment">Spinners are non-determinate.</li>
 						</ul>
 					</div>
 
 					<aside class="notes">
 						Honestly?  Someone much smarter than me could probably give an entire talk on progress bars alone. Progress bars with a counter running band animation have the appearance of running faster [[TODO MEDIA: include anim]] 
+
+						Any action taking less than 1 or so seconds doesn't need an indicator at all, thought is uninterrupted.
+						1-3 seconds displaying a spinner or basic prog is preferable. Don't want to include lots of explanation and distract users from the task at hand
+						3-10 Now you want to have progress bars with explanation text and/or animation
 					</aside>
 				</section>
 				<section>

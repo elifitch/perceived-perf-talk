@@ -360,6 +360,9 @@ body {
   font-size: 1.2em;
   color: inherit; }
 
+html.footer-fade .footer {
+  color: rgba(0, 0, 0, 0.15); }
+
 /*********************************************
  * UTILS
  *********************************************/
@@ -389,9 +392,6 @@ body {
 /*********************************************
  * State modes
  *********************************************/
-html.footer-fade .footer {
-  color: rgba(0, 0, 0, 0.2); }
-
 .reveal section .st-logo {
   width: 33%;
   background: transparent;
