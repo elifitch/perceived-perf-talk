@@ -25,7 +25,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
-					<h1>Perceived Performance</h1>
+					<h1 class="main-title">Perceived Performance</h1>
 					<h3>The only kind that really matters.</h3>
 				</section>
 				<section>
@@ -37,20 +37,26 @@
 				</section>
 				<section>
 					<div class="list">
-						<h2 class="list__heading">So lets talk about Perceived Perf</h2>
+						<h2 class="list__heading">Today I'll be shrieking about</h2>
 						<ul>
-							<li class="fragment">Not focused on objective performance</li>
+							<li class="fragment">Why optimizing for perceived performance is smart</li>
 							<li class="fragment">How humans perceive time</li>
-							<li class="fragment">[[[The basics of common perceived performance techniques]]]</li>
+							<li class="fragment">How to make passive waiting time less painful</li>
 							<li class="fragment">Predictive design</li>
 						</ul>
 					</div>
 				</section>
+				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
+					<h1 class="title">Why Perceived<br>Performance Matters
+					</h1>
+				</section>
 				<section>
-					<h2>Web Performance<br>
+					<h2>
+						Web Performance
+						<br>
 						<span class="fragment">is a matter of time.</span>
-						<aside class="notes">We talk about web performance in terms of time. Seconds to first paint, latency, download speed, etc </aside>
 					</h2>
+					<aside class="notes">We talk about web performance in terms of time. Seconds to first paint, latency, download speed, etc </aside>
 				</section>
 				<section>
 					<h2>Time is a funny thing.</h2>
@@ -69,7 +75,7 @@
 					<aside class="notes">
 						It means different things to different ppl.
 
-						It's hard to measure.
+						It's hard for people to estimate.
 
 						Heck maybe even that one stoner friend Travis doesn't even think time exists...man.
 					</aside>
@@ -82,7 +88,7 @@
 					</h2>
 				</section>
 				<section>
-					<h2>We optimize for<br>objective time</h2>
+					<h2>We optimize for objective time<br><span class="fragment">but that isn't very efficient.</span></h2>
 					<aside class="notes">
 						Objective time is easy to measure, that's why we focus on it.
 
@@ -97,21 +103,19 @@
 					</h3>
 					<aside class="notes">Jakob Nielsen</aside> -->
 					<h2>Time differences of <span class="u-underline">20%</span> or less are imperceptible</h2>
-					<p>source???</p>
 					<aside class="notes">
-						source????  Which means around 30% is needed to make it feel like a significant improvement.  30%, especially for a large codebase, can take a very long time to get there, and take a lot of resources.
+						TODO: source????  Which means around 30% is needed to make it feel like a significant improvement.  30%, especially for a large codebase, can take a very long time to get there, and take a lot of resources.
 					</aside>
 				</section>
 				<section>
-					<h2>
-						Focus on the subjective.
-					</h2>
+					<h2>Focus on the subjective.<br>Better <span class="emoji">💥</span> for <span class="emoji">🤑</span>.</h2>
 					<aside class="notes">The types of scenarios considered in many web performance studies/examples are really clean slate/pie in the sky scenarios that don't acknowledge the constraints within which we as devs operate. Sometimes you don't have a great deal of control over asset delivery, your application requires long asynchronous processes that cannot be easily improved, etc. We sell ourselves short by focusing on improving objective time when we can sometimes make much greater strides to how fast our apps &amp; sites *feel* without improving their actual speed at all.</aside>
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
-					<h2>
-						[[How we think<br>about time]]
-					</h2>
+					<h1 class="title">How we think<br>about time</h1>
+					<aside class="notes">
+						TODO: fix title
+					</aside>
 				</section>
 				<section>
 					<h2>
@@ -122,18 +126,6 @@
 					<aside class="notes">
 						Active is when we are mentally engaged, and passive phase is when we are focusing on the waiting time. Watching the kettle.  A key point here is that active waiting times don't feel like waiting at all.
 					</aside>
-				</section>
-				<section>
-					<img src="img/airplane.jpg">
-				</section>
-				<section>
-					<img src="img/baggage-claim-sleep.gif">
-				</section>
-				<section>
-					<h2 class="emoji">🏃🏃🏃🏃🏃</h2>
-				</section>
-				<section>
-					<img src="img/baggage-claim-kramer.gif">
 				</section>
 				<section>
 					<h2>
@@ -157,14 +149,9 @@
 						On the web, the distinction can be filling out a form, and waiting for your order to be approved.
 					</aside>
 				</section>
-				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
-					<h2>
-						Lets un-suck passive time
-					</h2>
-				</section>
 				<section>
 					<h2>
-						Passive waits feel <span class="u-underline">36%</span> longer
+						Humans tend to overestimate passive waits by <span class="u-underline">36%</span> .
 					</h2>
 					<aside class="notes">
 						Humans overestimate passive waits by 36%, per Richard Larson of MIT
@@ -173,14 +160,190 @@
 				<section>
 					<div class="list">
 						<h2 class="list__heading">
+							Let's do something about it
+						</h2>
+						<ul>
+							<li class="fragment">Make passive time less painful</li>
+							<li class="fragment">Make active time a greater proportion<br>of the total time</li>
+						</ul>
+					</div>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
+					<h1 class="title">
+						Un-suck passive time
+					</h1>
+				</section>
+				<!-- <section>
+					<div class="list">
+						<h2 class="list__heading">
+							Mapping duration to perception
+						</h2>
+						<ul>
+							<li class="fragment">0.2s: Instantaneous</li>
+							<li class="fragment">1s: Immediate</li>
+							<li class="fragment">10s: Attention</li>
+						</ul>
+					</div>
+					<aside class="notes">
+						
+					</aside>
+				</section> -->
+				<section>
+					<!-- <p>TODO but this is more than just passive waiting</p> -->
+					<div class="list">
+						<h2 class="list__heading">
+							What we can do
+						</h2>
+						<ul>
+							<li class="fragment">Respond to users immediately<!--even if nothing is happening--></li>
+							<li class="fragment">Explain what's happening</li>
+							<li class="fragment">Give users a sense of certainty</li>
+							<!-- <li class="fragment">Render minimum viable layout</li> -->
+							<li class="fragment">Occupy users' attention</li>
+						</ul>
+					</div>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<h2 class="sub-title title--gradient">Immediate<br>Response</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<h2>
+						<span class="fragment">Mousedown event</span>
+						<br>vs.<br>
+						<span class="fragment">Click event</span>
+					</h2>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+				<section>
+					<iframe src="http://codepen.io/EliFitch/full/551b95f61259d4ac83d15386fea54ba1/" frameborder="0" class="frame"></iframe>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+				<section>
+					<h2>Mousedown gives you<br><span class="u-underline">100-150ms</span> for free.</h2>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+				<section>
+					<h2>Stay <span class="active">:active,</span> kids</h2>
+					<p class="fragment">Sweet spot is 150-200ms.</p>
+					<aside class="notes">
+						So fun story, most people only keep their mouse down for between 100 and 150ms.  If you set the duration for an active animation at 200ms research conducted at my company showed that  If you stretch your active anim past 200ms people will lift before the animation finishes. 
+					</aside>
+				</section>
+				<section>
+					<h2 class="sub-title title--gradient">Explain Yourself</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<h2>Unexplained waits feel longer.</h2>
+					<aside class="notes">
+						A science man named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster.
+
+						One of them is uncertain waits feel longer
+					</aside>
+				</section>
+				<section>
+					<h2>Give users incremental information.</h2>
+					<h2 class="fragment">Reticulate your splines.</h2>
+					<aside class="notes">
+						A science man named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster.
+
+						One of them is uncertain waits feel longer
+					</aside>
+				</section>
+				<section>
+					<h2>TMI is a very real thing.</h2>
+					<h2 class="fragment">Explanation draws attention.</h2>
+					<aside class="notes">
+						If a wait is short, say less than 3s, explaining things, especially at a granular level is too much. Explanation focuses users on the process of the wait and hastens the loss of their attention
+					</aside>
+				</section>
+				<section>
+					<h2 class="sub-title title--gradient">Give Users<br>Certainty</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<h2>Uncertain waits feel longer.</h2>
+					<aside class="notes">
+						Another from David Maisters studies.
+
+						One of them is uncertain waits feel longer
+					</aside>
+				</section>
+				<section>
+					<h2>
+						<span class="fragment">P</span><span class="fragment">rogr</span><span class="fragment">ess </span><span class="fragment">ba</span><span class="fragment">...</span><span class="fragment">.</span><span class="fragment">.</span><span class="fragment">rs!</span>
+					</h2>
+
+					<aside class="notes">
+						Honestly?  Someone much smarter than me could probably give an entire talk on progress bars alone. Progress bars with a counter running band animation have the appearance of running faster [[TODO MEDIA: include anim]] 
+
+						Any action taking less than 1 or so seconds doesn't need an indicator at all, thought is uninterrupted.
+						1-3 seconds displaying a spinner or basic prog is preferable. Don't want to include lots of explanation and distract users from the task at hand
+						3-10 Now you want to have progress bars with explanation text and/or animation
+					</aside>
+				</section>
+				<section>
+					<div class="list">
+						<h2 class="list__heading">Don't overdo it</h2>
+						<ul>
+							<li class="fragment">&lt; 1s? Don't bother.</li>
+							<li class="fragment">~ 1-3s? Stick to the basics.</li>
+							<li class="fragment">~ 3-10s? Animation to the rescue.</li>
+						</ul>
+					</div>
+
+					<aside class="notes">
+						Any action taking less than 1 or so seconds doesn't need an indicator at all, thought is uninterrupted.
+						1-3 seconds displaying a spinner or basic prog is preferable. Don't want to include lots of explanation and distract users from the task at hand
+						3-10 Now you want to have progress bars with explanation text and/or animation
+					</aside>
+				</section>
+				<section>
+					<h2 class="sub-title title--gradient">Occupy Users'<br>Attention</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<img src="img/zoidberg.gif" alt="">
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<img src="img/slack-loading.gif" alt="">
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<img src="img/human-revolution-loading.jpg" alt="">
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<img src="img/uber-waiting-game.png" alt="" style="height: 45vh;">
+					<aside class="notes"></aside>
+				</section>
+				<!-- <section>
+					<h2>Animation</h2>
+					<aside class="notes">
+						TODO: animate this dood.
+					</aside>
+				</section> -->
+				<section>
+					<h2>If this feels like cheating,<br>that's because it is.</h2>
+					<aside class="notes"></aside>
+				</section>
+				<!-- <section>
+					<div class="list">
+						<h2 class="list__heading">
 							What makes time feel longer
 						</h2>
-						<!-- <ul>
-							<li class="fragment">Unexpected</li>
-							<li class="fragment">Unexplained</li>
-							<li class="fragment">Uncertain</li>
-							<li class="fragment">Unoccupied</li>
-						</ul> -->
 						<ul>
 							<li class="fragment">Unexpected &amp; Unexplained</li>
 							<li class="fragment">Uncertain</li>
@@ -193,18 +356,6 @@
 						Tremendous body of research into how humans perceive time, but very little of it has been specifically angled at understanding computer interfaces. A science man named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster. 4 Uns.
 					</aside>
 				</section>
-				<!-- <section>
-					<h2 class="u-inline-block u-text-left">
-						<span class="u-underline">Unexpected</span>
-						<br>
-						Be up front with your users.
-					</h2>
-					<aside class="notes">
-						If you know there's going to be a long wait, let the be clear and allow them to opt in.  If you make it the user's choice, you give them agency and the wait feels shorter.
-
-						Everyone's had an experience ordering a meal that's supposed to be quick, and when it takes forever it's *extra* annoying. When expecting something quick and it takes a long time, you're violating user's trust and defying their expectation.  They haven't mentally prepared for the wait involved, and so they're left watching the proverbial tea kettle.
-					</aside>
-				</section> -->
 				<section>
 					<div class="list">
 						<h2 class="list__heading">
@@ -263,8 +414,8 @@
 						Skeleton screens
 						Animation: passive phase begins when an animation ends. Animation impacts perception of progress bars, is closely tied to how ppl perceive time.
 					</aside>
-				</section>
-				<section>
+				</section> -->
+				<!-- <section>
 					<p>Issues with the prev section (4uns): Very general, doesn't really give specific use cases. Like where do skeleton screens really fit in. Attention?
 					<br><br>
 					Might be better to have a list of tenets: like load what you can, as soon as you can (skeleton screens). Rather than "unoccupied" and segue into skeletons as an example.
@@ -273,50 +424,48 @@
 					<br><br>
 					What about onclick vs onmousedown?????
 					</p>
-				</section>
+				</section> -->
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
-					<h2>Let's cheat</h2>
-					<p>[[[hate this structure]]]</p>
+					<h1>Predictive<br>Design</h1>
 				</section>
 				<section>
-					<p>some intro statement to what the fuck happens in this section</p>
-					<aside class="notes">
-						
-					</aside>
+					<!-- <h2>At its core, predictive design is about making active time a greater proportion of the total experience.</h2> -->
+					<h2>Rather than reduce passive time,<br>increase active time.</h2>
 				</section>
 				<section>
-					<h2>Render minimum viable layout.</h2>
-					<h2 class="fragment">Lazyload everything else as soon as sensible.</h2>
-					<aside class="notes">
-						
-					</aside>
+					<img src="img/airplane.jpg">
 				</section>
 				<section>
-					<h2>Onmousedown gives you 150ms for free</h2>
-					<aside class="notes">
-						
-					</aside>
+					<img src="img/baggage-claim-sleep.gif">
 				</section>
 				<section>
-					<p>onmousedown demo</p>
-					<aside class="notes">
-						
-					</aside>
+					<h2 class="emoji">🏃🏃🏃🏃🏃</h2>
 				</section>
 				<section>
-					<h2>Stay <span class="active">:active,</span> kids</h2>
-					<p class="fragment">Sweet spot is 200ms.</p>
-					<aside class="notes">
-						So fun story, most people only keep their mouse down for between 100 and 150ms.  If you set the duration for an active animation at 200ms research conducted at my company showed that  If you stretch your active anim past 200ms people will lift before the animation finishes. 
-					</aside>
+					<img src="img/baggage-claim-kramer.gif">
 				</section>
-				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
-					<h2>Predictive<br>Design</h2>
+				<section>
+					<h2>We can do something similar.</h2>
+					<aside class="notes">
+						Behavior of disembarking passengers is *very* predictable. They mostly travel to the baggage claim by the fastest possible route, and then procede to ground transportation.  They leaned on their understanding of how passengers behave, and used it to their advantage to make active time a much greater proportion of the experience.
+					</aside>
 				</section>
 				<section>
 					<h2>Users aren't snowflakes.</h2>
 					<img class="fragment" src="img/snowflake.gif" alt="">
 					<h2 class="fragment">Behavior follows patterns.</h2>
+					<aside class="notes">
+						restyle?
+					</aside>
+				</section>
+				<section>
+					<h2>If we can predict what users will do, why not preload their next action?</h2>
+					<aside class="notes">
+						restyle?
+					</aside>
+				</section>
+				<section>
+					<h2>Can be very simple.</h2>
 					<aside class="notes">
 						restyle?
 					</aside>
@@ -327,36 +476,59 @@
 						
 					</aside>
 				</section> -->
-				<section>
+				<!-- <section>
 					<h2>Why wait for a click?</h2>
 					<h2 class="fragment">Idle time is a terrible thing to waste.</h2>
 					<aside class="notes">
 						
 					</aside>
-				</section>
+				</section> -->
 				<section>
-					<p>form demo 1</p>
+					<iframe src="http://codepen.io/EliFitch/full/d16182d10fe2a0f7e3966014993680d6/" frameborder="0" class="frame"></iframe>
 					<aside class="notes">
 						
 					</aside>
 				</section>
 				<section>
-					<p>form demo 2</p>
+					<iframe src="http://codepen.io/EliFitch/full/0b77e940b7ac4f550b16b096da55c479/" frameborder="0" class="frame"></iframe>
 					<aside class="notes">
 						
 					</aside>
 				</section>
 				<section>
-					<p>button demo 1 webgl</p>
+					<iframe src="http://codepen.io/EliFitch/full/de45fbe0774bc6f6dce5db60fa25923d/" frameborder="0" class="frame"></iframe>
 					<aside class="notes">
 						
 					</aside>
 				</section>
 				<section>
-					<p>button demo 2 webgl</p>
+					<iframe src="http://codepen.io/EliFitch/full/87b337c9619afca8f390d173b505f1b7/" frameborder="0" class="frame"></iframe>
 					<aside class="notes">
 						
 					</aside>
+				</section>
+				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
+					<h2>TLDR;</h2>
+				</section>
+				<section>
+					<h2>Optimizing for perceived performance is more efficient.</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<h2>Build for immediacy.</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<h2>Give users explanation and certainty.</h2>
+					<h2 class="fragment">But not too much</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<h2>Whenever possible, predict and preload.</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
+					<h2>THANK YOU!</h2>
 				</section>
 
 
@@ -375,6 +547,7 @@
 			Reveal.initialize({
 				history: true,
 				controls: false,
+				progress: false,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
