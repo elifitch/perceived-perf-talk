@@ -20,6 +20,8 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<script src="demos/lib/js/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="reveal">
@@ -62,15 +64,24 @@
 					<h2>Time is a funny thing.</h2>
 					<aside class="notes">It means different things to different ppl</aside>
 				</section>
-				<section>
+				<!-- <section>
 					<img src="img/lol.gif" alt="">
 					<aside class="notes">It means different things to different ppl</aside>
+				</section> -->
+				<section>
+					<img src="img/dmv.jpg" alt="">
+					<aside class="notes">Anyone who's ever waited in line at the DMV can tell you, time is a human construct that doesn't exist</aside>
 				</section>
 				<section>
-					<h1 class="emoji">🤔</h1>
+					<img src="img/picard.jpg" alt="">
+					<aside class="notes">I mean time doesn't really exist b/c look at patrick stewart</aside>
+				</section>
+				<section>
+					<!-- <h2 class="emoji" style="font-size: 2.66em">🤔</h2> -->
+					<img src="img/thinky.png" class="transparent" alt="">
 					<aside class="notes">It means different things to different ppl</aside>
 				</section>
-				<section>
+				<!-- <section>
 					<h2>Time is a funny thing.</h2>
 					<aside class="notes">
 						It means different things to different ppl.
@@ -79,7 +90,7 @@
 
 						Heck maybe even that one stoner friend Travis doesn't even think time exists...man.
 					</aside>
-				</section>
+				</section> -->
 				<section>
 					<h2>
 						<span class="fragment">Objective time</span>
@@ -96,19 +107,18 @@
 					</aside>
 				</section>
 				<section>
-					<!-- <h3>
-						<span class="fragment">0.1 sec: instantaneous</span><br><br>
-						<span class="fragment">1 sec: no interruption</span><br><br>
-						<span class="fragment">10 sec: attention lost</span>
-					</h3>
-					<aside class="notes">Jakob Nielsen</aside> -->
-					<h2>Time differences of <span class="u-underline">20%</span> or less are imperceptible</h2>
+					<h2>Time differences of <span class="fragment anim-stroke">20%</span> or less are imperceptible.</h2>
+					<h6 class="citation" href="http://torbit.com/blog/2011/11/29/psychology-of-software-performance/">Steve Seow, Microsoft</h6>
 					<aside class="notes">
 						TODO: source????  Which means around 30% is needed to make it feel like a significant improvement.  30%, especially for a large codebase, can take a very long time to get there, and take a lot of resources.
 					</aside>
 				</section>
 				<section>
-					<h2>Focus on the subjective.<br>Better <span class="emoji">💥</span> for <span class="emoji">🤑</span>.</h2>
+					<h2>
+						Focus on the subjective.<br>
+						Better <span class="emoji">💥</span> for <span class="emoji">🤑</span>.
+					</h2>
+
 					<aside class="notes">The types of scenarios considered in many web performance studies/examples are really clean slate/pie in the sky scenarios that don't acknowledge the constraints within which we as devs operate. Sometimes you don't have a great deal of control over asset delivery, your application requires long asynchronous processes that cannot be easily improved, etc. We sell ourselves short by focusing on improving objective time when we can sometimes make much greater strides to how fast our apps &amp; sites *feel* without improving their actual speed at all.</aside>
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
@@ -151,8 +161,9 @@
 				</section>
 				<section>
 					<h2>
-						Humans tend to overestimate passive waits by <span class="u-underline">36%</span> .
+						Humans tend to overestimate passive waits by <span class="fragment anim-stroke">36%</span> .
 					</h2>
+					<h6 class="citation">Richard Larson, MIT</h6>
 					<aside class="notes">
 						Humans overestimate passive waits by 36%, per Richard Larson of MIT
 					</aside>
@@ -308,6 +319,9 @@
 						1-3 seconds displaying a spinner or basic prog is preferable. Don't want to include lots of explanation and distract users from the task at hand
 						3-10 Now you want to have progress bars with explanation text and/or animation
 					</aside>
+				</section>
+				<section>
+					<iframe src="https://codepen.io/EliFitch/full/179fd5d77c41b213e2cb813a047faeaa/" frameborder="0" class="frame"></iframe>
 				</section>
 				<section>
 					<h2 class="sub-title title--gradient">Occupy Users'<br>Attention</h2>
@@ -484,25 +498,31 @@
 					</aside>
 				</section> -->
 				<section>
-					<iframe src="http://codepen.io/EliFitch/full/d16182d10fe2a0f7e3966014993680d6/" frameborder="0" class="frame"></iframe>
+					<iframe src="demos/predictive-form-1.html" frameborder="0" class="frame" id="demo-1"></iframe>
+					<button class="lil-button js-reset" data-reset="demo-1">RESET</button>
 					<aside class="notes">
 						
 					</aside>
 				</section>
 				<section>
-					<iframe src="http://codepen.io/EliFitch/full/0b77e940b7ac4f550b16b096da55c479/" frameborder="0" class="frame"></iframe>
+					<iframe src="demos/predictive-form-2.html" frameborder="0" class="frame" id="demo-2"></iframe>
+					<button class="lil-button js-reset" data-reset="demo-2">RESET</button>
 					<aside class="notes">
 						
 					</aside>
 				</section>
 				<section>
-					<iframe src="http://codepen.io/EliFitch/full/de45fbe0774bc6f6dce5db60fa25923d/" frameborder="0" class="frame"></iframe>
+					<!-- <iframe src="http://codepen.io/EliFitch/full/de45fbe0774bc6f6dce5db60fa25923d/" frameborder="0" class="frame"></iframe> -->
+					<iframe src="demos/predictive-button-1.html" frameborder="0" class="frame" id="demo-3"></iframe>
+					<button class="lil-button js-reset" data-reset="demo-3">RESET</button>
 					<aside class="notes">
 						
 					</aside>
 				</section>
 				<section>
-					<iframe src="http://codepen.io/EliFitch/full/87b337c9619afca8f390d173b505f1b7/" frameborder="0" class="frame"></iframe>
+					<!-- <iframe src="http://codepen.io/EliFitch/full/87b337c9619afca8f390d173b505f1b7/" frameborder="0" class="frame"></iframe> -->
+					<iframe src="demos/predictive-button-2.html" frameborder="0" class="frame" id="demo-4"></iframe>
+					<button class="lil-button js-reset" data-reset="demo-4">RESET</button>
 					<aside class="notes">
 						
 					</aside>
@@ -557,6 +577,11 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+
+			$('.js-reset').on('click', function() {
+				var target = $(this).attr('data-reset');
+				document.getElementById(target).contentWindow.location.reload();
+			})
 		</script>
 	</body>
 </html>

@@ -320,6 +320,12 @@ body {
   background-clip: text;
   -webkit-background-clip: text; }
 
+.reveal .citation {
+  position: absolute;
+  padding-top: 2em;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.6); }
+
 /*********************************************
  * List
  *********************************************/
@@ -412,7 +418,10 @@ html.footer-fade .footer {
 
 .frame {
   width: 100%;
-  height: 40vh; }
+  height: 100vmin; }
+  @media screen and (min-width: 700px) {
+    .frame {
+      height: 40vh; } }
 
 .active {
   transition: 0.2s all;
@@ -425,3 +434,43 @@ html.footer-fade .footer {
   .active:active {
     background: #b200b2;
     transform: translateY(10%); }
+
+.reveal .slides section .fragment.anim-stroke {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  display: inline;
+  background-size: 0% 0.15em;
+  background-repeat: no-repeat;
+  background-position: 0 1em;
+  overflow: hidden;
+  font-family: "Brandon Grotesque", Impact, sans-serif;
+  background-image: linear-gradient(to bottom, #ff4cff 0%, #ff4cff 100%);
+  text-shadow: 0px 0.025em 0.1em rgba(0, 0, 0, 0.2); }
+  .reveal .slides section .fragment.anim-stroke.visible {
+    background-size: 100% 0.15em; }
+
+img.transparent {
+  box-shadow: none !important;
+  background: transparent !important; }
+
+.lil-button {
+  cursor: pointer;
+  font-size: 0.6em;
+  font-family: "Pinopolis-Regular", sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+  appearance: none;
+  background: transparent;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  border: 0.1em solid rgba(0, 0, 0, 0.4);
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+  .lil-button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #efefef; }
+  .lil-button:active {
+    transform: translateY(5%); }
+  .lil-button:focus {
+    outline: none; }
