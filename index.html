@@ -32,10 +32,12 @@
 				</section>
 				<section>
 					<h2>Hi, I'm Eli.</h2>
-					<h4 class="fragment">I make dumb stuff on the internet</h4>
+					<h4 class="fragment">I make weird stuff on the internet</h4>
 				</section>
 				<section>
-					<img class="st-logo" src="img/st.svg" alt="">
+					<img class="st-logo fragment" src="img/st.svg" alt="">
+					<img class="st-logo fragment" src="img/codepen.svg" alt="">
+					<img class="st-logo fragment" src="img/skull-fella.png" alt="">
 				</section>
 				<section>
 					<div class="list">
@@ -62,6 +64,7 @@
 				</section>
 				<section>
 					<h2>Time is a funny thing.</h2>
+					<img src="img/thinky.png" class="transparent fragment" alt="" style="width: 3em;">
 					<aside class="notes">It means different things to different ppl</aside>
 				</section>
 				<!-- <section>
@@ -72,15 +75,14 @@
 					<img src="img/dmv.jpg" alt="">
 					<aside class="notes">Anyone who's ever waited in line at the DMV can tell you, time is a human construct that doesn't exist</aside>
 				</section>
-				<section>
+				<!-- <section>
 					<img src="img/picard.jpg" alt="">
 					<aside class="notes">I mean time doesn't really exist b/c look at patrick stewart</aside>
-				</section>
-				<section>
-					<!-- <h2 class="emoji" style="font-size: 2.66em">🤔</h2> -->
+				</section> -->
+				<!-- <section>
 					<img src="img/thinky.png" class="transparent" alt="">
 					<aside class="notes">It means different things to different ppl</aside>
-				</section>
+				</section> -->
 				<!-- <section>
 					<h2>Time is a funny thing.</h2>
 					<aside class="notes">
@@ -97,6 +99,10 @@
 						<br>vs.<br>
 						<span class="fragment">Subjective time</span>
 					</h2>
+					<aside class="notes">
+						Key distinction. The difference between what a clock and what a human observes.
+						The difference between a timer and watching the pot of water boil
+					</aside>
 				</section>
 				<section>
 					<h2>We optimize for objective time<br><span class="fragment">but that isn't very efficient.</span></h2>
@@ -111,7 +117,6 @@
 					<aside class="notes">
 						The field of Psychophysics, the raddest name for a science btw, has this concept of just noticeable difference.
 						Basically any human observable phenomena needs to pass a threshhold or else they'll just say "seems about the same to me"
-						<h4 class="fragment">(the most totally <span class="u-underline">raddest</span> science name)</h4>
 					</aside>
 				</section>
 				<section>
@@ -130,7 +135,7 @@
 					<aside class="notes">The types of scenarios considered in many web performance studies/examples are really clean slate/pie in the sky scenarios that don't acknowledge the constraints within which we as devs operate. Sometimes you don't have a great deal of control over asset delivery, your application requires long asynchronous processes that cannot be easily improved, etc. We sell ourselves short by focusing on improving objective time when we can sometimes make much greater strides to how fast our apps &amp; sites *feel* without improving their actual speed at all.</aside>
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
-					<h1 class="title">How we think<br>about time</h1>
+					<h1 class="title">How We Think<br>About Time</h1>
 					<aside class="notes">
 						TODO: fix title
 					</aside>
@@ -147,9 +152,18 @@
 				</section>
 				<section>
 					<h2>
-						<span class="fragment emoji">🚴💨</span>
+						Humans tend to overestimate passive waits by <span class="fragment anim-stroke">36%</span> .
+					</h2>
+					<h6 class="citation">Richard Larson, MIT</h6>
+					<aside class="notes">
+						Humans overestimate passive waits by 36%, per Richard Larson of MIT
+					</aside>
+				</section>
+				<section>
+					<h2>
+						<span class="fragment emoji">🚗💨</span>
 						<br>vs.<br>
-						<span class="fragment emoji u-inline-block u-pt-04">🚐🚐🚐</span>
+						<span class="fragment emoji u-inline-block u-pt-04">🚐🚗🚐</span>
 					</h2>
 					<aside class="notes">
 						Riding your bike a half hour to work can seem shorter than a 20 minute drive spent sitting in traffic.
@@ -168,15 +182,6 @@
 					</aside>
 				</section>
 				<section>
-					<h2>
-						Humans tend to overestimate passive waits by <span class="fragment anim-stroke">36%</span> .
-					</h2>
-					<h6 class="citation">Richard Larson, MIT</h6>
-					<aside class="notes">
-						Humans overestimate passive waits by 36%, per Richard Larson of MIT
-					</aside>
-				</section>
-				<section>
 					<div class="list">
 						<h2 class="list__heading">
 							Let's do something about it
@@ -192,7 +197,7 @@
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
 					<h1 class="title">
-						Un-suck passive time
+						Un-Suck Passive Time
 					</h1>
 				</section>
 				<!-- <section>
@@ -218,8 +223,8 @@
 						</h2>
 						<ul>
 							<li class="fragment">Respond to users immediately<!--even if nothing is happening--></li>
-							<li class="fragment">Explain what's happening</li>
 							<li class="fragment">Give users a sense of certainty</li>
+							<li class="fragment">Explain what's happening</li>
 							<!-- <li class="fragment">Render minimum viable layout</li> -->
 							<li class="fragment">Occupy users' attention</li>
 						</ul>
@@ -229,6 +234,11 @@
 				<section>
 					<h2 class="sub-title title--gradient">Immediate<br>Response</h2>
 					<aside class="notes"></aside>
+				</section>
+				<section>
+					<h2>Takes <span class="fragment anim-stroke">~1 second</span> for<br>flow to be disrupted.</h2>
+					<h6 class="citation">Jakob Nielsen, Neilsen Norman Group</h6>
+					<!-- <h4 class="fragment">So this simple change gets you half way to the 20% threshhold!</h4> -->
 				</section>
 				<section>
 					<h2>
@@ -247,47 +257,16 @@
 					</aside>
 				</section>
 				<section>
-					<h2>Mousedown gives you<br><span class="u-underline">100-150ms</span> for free.</h2>
+					<h2>Mousedown gives you<br><span class="fragment anim-stroke">100-150ms</span> for free.</h2>
 					<aside class="notes">
 						
 					</aside>
 				</section>
 				<section>
-					<h2>Takes ~1 second for flow to be disrupted.</h2>
-					<h4 class="fragment">So this simple change gets you half way to the 20% threshhold!</h4>
-				</section>
-				<section>
-					<h2>Stay <span class="active">:active,</span> kids</h2>
+					<h2>Stay <span class="active">:active,</span> kids!</h2>
 					<h4 class="fragment">Anim duration sweet spot is 150-200ms.</h4>
 					<aside class="notes">
 						So fun story, most people only keep their mouse down for between 100 and 150ms.  If you set the duration for an active animation at 200ms research conducted at my company showed that  If you stretch your active anim past 200ms people will lift before the animation finishes. 
-					</aside>
-				</section>
-				<section>
-					<h2 class="sub-title title--gradient">Explain Yourself</h2>
-					<aside class="notes"></aside>
-				</section>
-				<section>
-					<h2>Unexplained waits feel longer.</h2>
-					<aside class="notes">
-						A science man named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster.
-
-						One of them is uncertain waits feel longer
-					</aside>
-				</section>
-				<section>
-					<h2>Give users incremental information.</h2>
-					<aside class="notes">
-						A science man named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster.
-
-						One of them is uncertain waits feel longer
-					</aside>
-				</section>
-				<section>
-					<h2>TMI is a very real thing.</h2>
-					<h2 class="fragment">Explanation draws attention.</h2>
-					<aside class="notes">
-						If a wait is short, say less than 3s, explaining things, especially at a granular level is too much. Explanation focuses users on the process of the wait and hastens the loss of their attention
 					</aside>
 				</section>
 				<section>
@@ -296,6 +275,7 @@
 				</section>
 				<section>
 					<h2>Uncertain waits feel longer.</h2>
+					<h6 class="citation">David Maister</h6>
 					<aside class="notes">
 						Another from David Maisters studies.
 
@@ -316,12 +296,17 @@
 					</aside>
 				</section>
 				<section>
+					<!-- <iframe src="https://codepen.io/EliFitch/full/179fd5d77c41b213e2cb813a047faeaa/" frameborder="0" class="frame"></iframe> -->
+					<iframe src="demos/progress.html" frameborder="0" class="frame"></iframe>
+					<h6 class="citation" style="padding-top: 0">Chris Harrison, Carnegie Mellon</h6>
+				</section>
+				<section>
 					<div class="list">
 						<h2 class="list__heading">Don't overdo it</h2>
 						<ul>
 							<li class="fragment">&lt; 1s? Don't bother.</li>
 							<li class="fragment">~ 1-3s? Stick to the basics.</li>
-							<li class="fragment">~ 3-10s? Animation to the rescue.</li>
+							<li class="fragment">~ 3-10s? Time to get fancy.</li>
 						</ul>
 					</div>
 
@@ -332,8 +317,32 @@
 					</aside>
 				</section>
 				<section>
-					<!-- <iframe src="https://codepen.io/EliFitch/full/179fd5d77c41b213e2cb813a047faeaa/" frameborder="0" class="frame"></iframe> -->
-					<iframe src="demos/progress.html" frameborder="0" class="frame"></iframe>
+					<h2 class="sub-title title--gradient">Explain Yourself</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<h2>Unexplained waits feel longer.</h2>
+					<h6 class="citation">David Maister</h6>
+					<aside class="notes">
+						A science man named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster.
+
+						One of them is uncertain waits feel longer
+					</aside>
+				</section>
+				<section>
+					<h2>Give users incremental information.</h2>
+					<aside class="notes">
+						A science man named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster.
+
+						One of them is uncertain waits feel longer
+					</aside>
+				</section>
+				<section>
+					<h2>TMI is a very real thing.</h2>
+					<h2 class="fragment">Explanation draws attention.</h2>
+					<aside class="notes">
+						If a wait is short, say less than 3s, explaining things, especially at a granular level is too much. Explanation focuses users on the process of the wait and hastens the loss of their attention
+					</aside>
 				</section>
 				<section>
 					<h2 class="sub-title title--gradient">Occupy Users'<br>Attention</h2>
@@ -365,7 +374,9 @@
 				<section>
 					<h2>If this feels like cheating,<br>that's because it is.</h2>
 					<h4 class="fragment">You dirty cheaters, you.</h4>
-					<aside class="notes"></aside>
+					<aside class="notes">
+						This information doesn't have to be directly related to what you're doing; and that's okay.
+					</aside>
 				</section>
 				<!-- <section>
 					<div class="list">
@@ -454,10 +465,9 @@
 					</p>
 				</section> -->
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
-					<h1>Predictive<br>Design</h1>
+					<h1 class="title">Predictive<br>Design</h1>
 				</section>
 				<section>
-					<!-- <h2>At its core, predictive design is about making active time a greater proportion of the total experience.</h2> -->
 					<h2>Rather than reduce passive time,<br>increase active time's share.</h2>
 				</section>
 				<section>
@@ -472,6 +482,16 @@
 				<section>
 					<img src="img/baggage-claim-kramer.gif">
 				</section>
+				<!-- <section>
+					<h2>
+						<span class="fragment emoji">🤔</span>
+						<br>vs.<br>
+						<span class="fragment emoji u-inline-block u-pt-04">🕐🌮🕑🌮🕒</span>
+					</h2>
+					<aside class="notes">
+						Going back to the restaurant example, what if we could accurately predict what you were going to order, so the food was being prepared as you were making up your mind, and as soon as you put in the order, we just brought out the food. That's predictive design.
+					</aside>
+				</section> -->
 				<section>
 					<h2>We can do something similar.</h2>
 					<aside class="notes">
@@ -543,10 +563,10 @@
 				</section>
 				<section>
 					<h2>Predictive design is a very powerful tool.</h2>
-					<h2 class="fragment">Use it wisely.</h2>
+					<h2 class="fragment">Use it <span class="fragment anim-stroke">wisely.</span></h2>
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
-					<h2>TLDR;</h2>
+					<h1 class="title">TLDR;</h1>
 				</section>
 				<section>
 					<h2>Optimizing for perceived performance is more efficient.</h2>
@@ -557,24 +577,25 @@
 					<aside class="notes"></aside>
 				</section>
 				<section>
-					<h2>Give users explanation and certainty.</h2>
-					<h2 class="fragment">But not too much</h2>
+					<h2>Give users feedback.</h2>
+					<h2 class="fragment">But not too much.</h2>
 					<aside class="notes"></aside>
 				</section>
 				<section>
-					<h2>Whenever possible, predict and preload.</h2>
+					<h2>Whenever possible,<br>predict and preload.</h2>
 					<aside class="notes"></aside>
 				</section>
-				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
+				<section data-background-image="img/pink-orange-gradient.svg">
 					<h1 class="thank-you">Thank <img class="rad-pointer" src="img/rad-pointer.png" alt=""> y'all!</h1>
+					<h4 style="color: rgba(0,0,0,0.4)">http://eli.wtf/talks/perceived-perf-talk</h4>
 					<!-- 
 					<h2>y'all!</h2> -->
 				</section>
 
 
 			<div class="footer">
-				<a class="footer__logo">Eli.wtf</a>
-				<a class="footer__social">@elifitch</a>
+				<a class="footer__logo" href="http://eli.wtf/" target="_blank">Eli.wtf</a>
+				<a class="footer__social" href="http://twitter.com/elifitch" target="_blank">@elifitch</a>
 			</div>
 		</div>
 

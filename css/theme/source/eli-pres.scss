@@ -17,9 +17,13 @@
 }
 
 .reveal section .st-logo {
-	width: 33%;
+	width: 25%;
 	background: transparent;
 	box-shadow: none;
+	margin-right: 1em;
+	&:last-child {
+		margin-right: 0;
+	}
 }
 .frame {
 	width: 100%;
@@ -35,6 +39,7 @@
 	cursor: pointer;
 	display: inline-block;
 	border-radius: 0.05em;
+	line-height: 0.8;
 	&:hover {
 		background: $color-pink;
 	}

@@ -204,8 +204,9 @@ function showSkull() {
     $('.spinner').addClass('hide');
     skullContainer.add(skull)
   } else {
-    setInterval(function() {
+    var checkInterval = setInterval(function() {
       if (skull && skullContainer) {
+        clearInterval(checkInterval);
         $('.spinner').addClass('hide');
         skullContainer.add(skull)
       }
@@ -249,18 +250,20 @@ function deg2Rad(deg) {
 };
 
 function backgroundProgress(duration) {
-  setInterval(function() {
+  var backgroundInterval = setInterval(function() {
     counter += 100;
     var progress = (counter/duration) * 100;
     if (counter <= duration) {
       $bar.css('width', `${progress}%`);
       $output.text(`${parseInt(progress)}% complete`);
+    } else {
+      clearInterval(backgroundInterval);
     }
   },100);
 }
 
-loadArea.addEventListener('mouseover', loadSkull);
-button.addEventListener('click', showSkull);
+loadArea.addEventListener('mouseenter', loadSkull);
+button.addEventListener('mousedown', showSkull);
 container.addEventListener('mousemove', onMouseMove);
 showBB.addEventListener('change', function() {
   $('.load-area').toggleClass('show');

@@ -319,11 +319,14 @@ body {
   font-size: 2.7em; }
 
 .reveal .title--gradient {
-  color: red; }
+  background: url("../../img/pink-orange-gradient.svg") repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
 
 .reveal .citation {
   position: absolute;
-  padding-top: 2em;
+  padding-top: 1em;
   width: 100%;
   color: rgba(0, 0, 0, 0.6); }
 
@@ -413,9 +416,12 @@ html.footer-fade .footer {
  * State modes
  *********************************************/
 .reveal section .st-logo {
-  width: 33%;
+  width: 25%;
   background: transparent;
-  box-shadow: none; }
+  box-shadow: none;
+  margin-right: 1em; }
+  .reveal section .st-logo:last-child {
+    margin-right: 0; }
 
 .frame {
   width: 100%;
@@ -429,7 +435,8 @@ html.footer-fade .footer {
   -webkit-user-select: none;
   cursor: pointer;
   display: inline-block;
-  border-radius: 0.05em; }
+  border-radius: 0.05em;
+  line-height: 0.8; }
   .active:hover {
     background: #ff4cff; }
   .active:active {

@@ -41,13 +41,15 @@
 .reveal .title--gradient {
 	// color: transparent;
 	// background: url("../../../img/pink-orange-gradient.svg") repeat;
-	// background-clip: text;
-	// -webkit-background-clip: text;
-	color: red;
+	background: url("../../img/pink-orange-gradient.svg") repeat;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	// color: red;
 }
 .reveal .citation {
 	position: absolute;
-    padding-top: 2em;
+    padding-top: 1em;
     width: 100%;
     color: rgba(0,0,0,.6);
 }
