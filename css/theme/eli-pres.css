@@ -475,3 +475,24 @@ img.transparent {
     transform: translateY(5%); }
   .lil-button:focus {
     outline: none; }
+
+.thank-you {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.rad-pointer.rad-pointer.rad-pointer.rad-pointer.rad-pointer {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  animation: 0.25s shake infinite;
+  height: 2em;
+  width: auto;
+  margin-left: 0.5em !important;
+  margin-right: 0.5em !important; }
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(-5%) rotate(7.77deg); }
+  50% {
+    transform: translateX(5%) rotate(7.77deg); } }
