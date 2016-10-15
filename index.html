@@ -109,7 +109,7 @@
 					<aside class="notes">
 						Objective time is easy to measure, that's why we focus on it.
 
-						But if the goal is to make our shit feel fast, it's not very efficient.
+						But if the goal is to make our shit feel fast, just addressing objective time is not very efficient.
 					</aside>
 				</section>
 				<section>
@@ -200,23 +200,7 @@
 						Un-Suck Passive Time
 					</h1>
 				</section>
-				<!-- <section>
-					<div class="list">
-						<h2 class="list__heading">
-							Mapping duration to perception
-						</h2>
-						<ul>
-							<li class="fragment">0.2s: Instantaneous</li>
-							<li class="fragment">1s: Immediate</li>
-							<li class="fragment">10s: Attention</li>
-						</ul>
-					</div>
-					<aside class="notes">
-						
-					</aside>
-				</section> -->
 				<section>
-					<!-- <p>TODO but this is more than just passive waiting</p> -->
 					<div class="list">
 						<h2 class="list__heading">
 							What we can do
@@ -225,11 +209,13 @@
 							<li class="fragment">Respond to users immediately<!--even if nothing is happening--></li>
 							<li class="fragment">Give users a sense of certainty</li>
 							<li class="fragment">Explain what's happening</li>
-							<!-- <li class="fragment">Render minimum viable layout</li> -->
 							<li class="fragment">Occupy users' attention</li>
 						</ul>
 					</div>
-					<aside class="notes"></aside>
+					<aside class="notes">
+						There are a lot of little things we can do to make passive waiting less shitty,
+						I believe these 4 provide the most impact
+					</aside>
 				</section>
 				<section>
 					<h2 class="sub-title title--gradient">Immediate<br>Response</h2>
@@ -238,7 +224,17 @@
 				<section>
 					<h2>Takes <span class="fragment anim-stroke">~1 second</span> for<br>flow to be disrupted.</h2>
 					<h6 class="citation">Jakob Nielsen, Neilsen Norman Group</h6>
+					<aside class="notes">
+						in a pretty famous study Jakob Nielsen of the Nielsen Norman Group showed that it took
+						about 1 sec for peoples flow of thought to be disrupted &amp; for them to mentally transition to a waiting state.
+					</aside>
 					<!-- <h4 class="fragment">So this simple change gets you half way to the 20% threshhold!</h4> -->
+				</section>
+				<section>
+					<h2>Let's pack as much loading into that 1 second as possible.</h2>
+					<aside class="notes">
+						If it takes 1 sec for ppl to even realize they're waiting, lets pack as much as possible into that 1 second.
+					</aside>
 				</section>
 				<section>
 					<h2>
@@ -247,7 +243,9 @@
 						<span class="fragment">Click event</span>
 					</h2>
 					<aside class="notes">
-						
+						One of my favorite ways to do that is replacing click events with mousedown events.
+						Click events actually fire not when the mouse button goes down, but when it comes back up again.
+						So there's this gap when the user has clicked down, but the click event has yet to fire.
 					</aside>
 				</section>
 				<section>
@@ -257,16 +255,18 @@
 					</aside>
 				</section>
 				<section>
-					<h2>Mousedown gives you<br><span class="fragment anim-stroke">100-150ms</span> for free.</h2>
+					<h2>Mousedown gives you a<br><span class="fragment anim-stroke">100-150ms</span> head start.</h2>
 					<aside class="notes">
 						
 					</aside>
 				</section>
 				<section>
 					<h2>Stay <span class="active">:active,</span> kids!</h2>
-					<h4 class="fragment">Anim duration sweet spot is 150-200ms.</h4>
+					<h4 class="fragment">Animation duration sweet spot is 150-200ms.</h4>
 					<aside class="notes">
-						So fun story, most people only keep their mouse down for between 100 and 150ms.  If you set the duration for an active animation at 200ms research conducted at my company showed that  If you stretch your active anim past 200ms people will lift before the animation finishes. 
+						Active states function just like hoverstates, but they fire when an element is clicked.
+						They immediately give your app a sense of immediacy and responsiveness which helps to keep the user's thought flow uninterrupted.
+						If you set the duration for an active animation at just past the duration folks leave their mouse button pressed, say 200ms, research conducted on mech turk showed that a subset of users won't lift their mouse button until the animation has finished, so you can coax them into leaving their mouse button pressed, expanding the head start you get from switching to mousedown.
 					</aside>
 				</section>
 				<section>
@@ -277,22 +277,17 @@
 					<h2>Uncertain waits feel longer.</h2>
 					<h6 class="citation">David Maister</h6>
 					<aside class="notes">
-						Another from David Maisters studies.
-
-						One of them is uncertain waits feel longer
+						Postulated by business consultant but confirmed in several studies. If people don't have a sense of how much has elapsed and how much is left.
 					</aside>
 				</section>
 				<section>
 					<h2>
 						<span class="fragment">P</span><span class="fragment">rogr</span><span class="fragment">ess </span><span class="fragment">ba</span><span class="fragment">...</span><span class="fragment">.</span><span class="fragment">.</span><span class="fragment">rs!</span>
 					</h2>
+					<h4 class="fragment">Animation makes a difference.</h4>
 
 					<aside class="notes">
-						Honestly?  Someone much smarter than me could probably give an entire talk on progress bars alone. Progress bars with a counter running band animation have the appearance of running faster [[TODO MEDIA: include anim]] 
-
-						Any action taking less than 1 or so seconds doesn't need an indicator at all, thought is uninterrupted.
-						1-3 seconds displaying a spinner or basic prog is preferable. Don't want to include lots of explanation and distract users from the task at hand
-						3-10 Now you want to have progress bars with explanation text and/or animation
+						Honestly?  Someone much smarter than me could probably give an entire talk on progress bars alone. Progress bars with a counter running band animation have the appearance of running faster [[TODO MEDIA: include anim]]
 					</aside>
 				</section>
 				<section>
@@ -300,6 +295,14 @@
 					<iframe src="demos/progress.html" frameborder="0" class="frame"></iframe>
 					<h6 class="citation" style="padding-top: 0">Chris Harrison, Carnegie Mellon</h6>
 				</section>
+				<section>
+					<h2>Bars with accellerating bands feel <span class="fragment anim-stroke">12%</span> faster.</h2>
+					<h6 class="citation">Chris Harrison, Carnegie Mellon</h6>
+					<aside class="notes">
+						Can get that accellerating feel just by applying an ease-in to the animation
+					</aside>
+				</section>
+
 				<section>
 					<div class="list">
 						<h2 class="list__heading">Don't overdo it</h2>
@@ -324,13 +327,19 @@
 					<h2>Unexplained waits feel longer.</h2>
 					<h6 class="citation">David Maister</h6>
 					<aside class="notes">
+						Waits feel long and unjust when they're unexplained. Be honest w/ your users and tell them what's going on.  Explain to them the value of why they have to wait for something to load.
+					</aside>
+				</section>
+				<section>
+					<h2>Give users incremental information.</h2>
+					<aside class="notes">
 						A science man named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster.
 
 						One of them is uncertain waits feel longer
 					</aside>
 				</section>
 				<section>
-					<h2>Give users incremental information.</h2>
+					<iframe src="demos/progress-explain.html" frameborder="0" class="frame"></iframe>
 					<aside class="notes">
 						A science man named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster.
 
@@ -378,92 +387,6 @@
 						This information doesn't have to be directly related to what you're doing; and that's okay.
 					</aside>
 				</section>
-				<!-- <section>
-					<div class="list">
-						<h2 class="list__heading">
-							What makes time feel longer
-						</h2>
-						<ul>
-							<li class="fragment">Unexpected &amp; Unexplained</li>
-							<li class="fragment">Uncertain</li>
-							<li class="fragment">Unoccupied</li>
-						</ul>
-					</div>
-					<aside class="notes">
-						TODO fix slide style
-
-						Tremendous body of research into how humans perceive time, but very little of it has been specifically angled at understanding computer interfaces. A science man named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster. 4 Uns.
-					</aside>
-				</section>
-				<section>
-					<div class="list">
-						<h2 class="list__heading">
-							Explain what's going on
-						</h2>
-						<ul>
-							<li class="fragment">Be up front with your users</li>
-						</ul>
-					</div>
-
-					<aside class="notes">
-
-					</aside>
-				</section>
-				<section>
-					<p>picture of some modal with a button</p>
-
-					<aside class="notes">
-
-					</aside>
-				</section>
-				<section>
-					<div class="list">
-						<h2 class="list__heading">
-							Give users certainty
-						</h2>
-						<ul>
-							<li>
-								<span class="fragment">P</span><span class="fragment">rogr</span><span class="fragment">ess </span><span class="fragment">ba</span><span class="fragment">...</span><span class="fragment">.</span><span class="fragment">.</span><span class="fragment">rs!</span>
-							</li>
-							<li class="fragment">Easy to overuse.</li>
-							<li class="fragment">Spinners are non-determinate.</li>
-						</ul>
-					</div>
-
-					<aside class="notes">
-						Honestly?  Someone much smarter than me could probably give an entire talk on progress bars alone. Progress bars with a counter running band animation have the appearance of running faster [[TODO MEDIA: include anim]] 
-
-						Any action taking less than 1 or so seconds doesn't need an indicator at all, thought is uninterrupted.
-						1-3 seconds displaying a spinner or basic prog is preferable. Don't want to include lots of explanation and distract users from the task at hand
-						3-10 Now you want to have progress bars with explanation text and/or animation
-					</aside>
-				</section>
-				<section>
-					<div class="list">
-						<h2 class="list__heading">
-							Occupy users' attention
-						</h2>
-						<ul>
-							<li class="fragment">Load what you can, as soon as you can.</li>
-							<li class="fragment">Animation!</li>
-						</ul>
-					</div>
-
-					<aside class="notes">
-						Skeleton screens
-						Animation: passive phase begins when an animation ends. Animation impacts perception of progress bars, is closely tied to how ppl perceive time.
-					</aside>
-				</section> -->
-				<!-- <section>
-					<p>Issues with the prev section (4uns): Very general, doesn't really give specific use cases. Like where do skeleton screens really fit in. Attention?
-					<br><br>
-					Might be better to have a list of tenets: like load what you can, as soon as you can (skeleton screens). Rather than "unoccupied" and segue into skeletons as an example.
-					<br><br>
-					Where do active states and such fit in??
-					<br><br>
-					What about onclick vs onmousedown?????
-					</p>
-				</section> -->
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
 					<h1 class="title">Predictive<br>Design</h1>
 				</section>
@@ -564,6 +487,10 @@
 				<section>
 					<h2>Predictive design is a very powerful tool.</h2>
 					<h2 class="fragment">Use it <span class="fragment anim-stroke">wisely.</span></h2>
+					<aside class="notes">
+						Made a joke about machine learning and stuff, and while it doesn't have to be that complex it certainly can be.
+						If you work for a company that has a lot of data on how your users interact w/ your app, you could very feasibly make accurate predictions about what their next action/page/whatever will be without relying on something so crude as cursor position.
+					</aside>
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
 					<h1 class="title">TLDR;</h1>

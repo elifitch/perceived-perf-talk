@@ -1,5 +1,6 @@
 <head>
 	<link rel="stylesheet prefetch" href="lib/css/foundation.min.css">
+	<script src="lib/js/jquery.min.js"></script>
 
 	<style>
 		.container {
@@ -19,7 +20,7 @@
 		  overflow: hidden;
 		  margin-bottom: 2em;
 		  width: calc(100% - 3em);
-		  opacity: 0.1;
+		  opacity: 1;
 		}
 		.bar__prog {
 		  height: 2em;
@@ -119,32 +120,6 @@
 		<div class="row">
 		  <div class="column small-12 medium-10 medium-offset-1 large-8 large-offset-2">
 		    <div class="action-jackson">
-		      <input type="checkbox" class="checkbox" checked>
-		      <div class="bar">
-		        <div class="bar__prog anim-bar"></div>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-		    
-		<div class="row">
-		  <div class="column small-12 medium-10 medium-offset-1 large-8 large-offset-2">
-		    <div class="action-jackson">
-		      <input type="checkbox" class="checkbox">
-		      <div class="bar">
-		        <div class="bar__prog anim-bar">
-		          <div class="bar__stripes anim-counter-flow"></div>
-		        </div>
-		      </div>
-		    </div>
-
-		  </div>
-		</div>
-		    
-		<div class="row">
-		  <div class="column small-12 medium-10 medium-offset-1 large-8 large-offset-2">
-		    <div class="action-jackson">
-		      <input type="checkbox" class="checkbox">
 		      <div class="bar">
 		        <div class="bar__prog anim-bar">
 		        </div>
@@ -153,18 +128,35 @@
 		    </div>
 		  </div>
 		</div>
-
-		<!-- <div class="row">
-		  <div class="column small-12 medium-10 medium-offset-1 large-8 large-offset-2">
-		    <div class="action-jackson">
-		      <input type="checkbox" class="checkbox">
-		      <div class="bar">
-		        <div class="bar__prog anim-bar--speedup">
-		        </div>
-		        <div class="bar__stripes bar__stripes--counterflow-speedup anim-counter-flow--speedup"></div>
-		      </div>
-		    </div>
-		  </div>
-		</div> -->
+		<div class="row">
+			<div class="column small-12 medium-10 medium-offset-1 large-8 large-offset-2">
+				<h3 id="readout">0/37 Ricks catalogued</h3>
+			</div>
+		</div>
 	</div>
+
 </div>
+
+<script>
+	var counter = 0;
+	var $readout = $('#readout');
+
+	function explain(dur) {
+		var interval = setInterval(function() {
+			counter += 100;
+    		var progress = (counter/dur);
+    		var finalCount = 37;
+    		if (counter <= 8000) {
+    			$readout.text(`${parseInt((finalCount * progress))} / ${finalCount} demos for this talk complete`);
+    		} else {
+    			counter = 0;
+    		}
+		}, 100)
+	}
+
+	explain(8000);
+</script>
+
+
+
+
