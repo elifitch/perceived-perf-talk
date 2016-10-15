@@ -67,7 +67,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
+  .load-area.show {
+    opacity: 1;
   }
 
   .debug {
@@ -102,6 +107,10 @@
     <div class="column small-6 full-height">
       <div class="debug">
         <h3 class="debug__details">Background Progress</h3>
+        <label for="bb">
+          Show bounding box
+          <input type="checkbox" id="bb">
+        </label>
         
         <div class="js-debug-bar debug__bar"></div>
         <h6 class="js-debug-details debug__details">&nbsp;</h6>
@@ -133,6 +142,7 @@ var percY;
 var counter = 0;
 var $bar = $('.js-debug-bar');
 var $output = $('.js-debug-details');
+var showBB = document.getElementById('bb');
 
 function init() {
 
@@ -252,5 +262,9 @@ function backgroundProgress(duration) {
 loadArea.addEventListener('mouseover', loadSkull);
 button.addEventListener('click', showSkull);
 container.addEventListener('mousemove', onMouseMove);
+showBB.addEventListener('change', function() {
+  $('.load-area').toggleClass('show');
+});
+
 init();
 </script>

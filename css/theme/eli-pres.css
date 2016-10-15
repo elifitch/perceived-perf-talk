@@ -290,6 +290,10 @@ body {
 * {
   -webkit-font-smoothing: antialiased; }
 
+.reveal a:hover {
+  color: #ff4cff;
+  cursor: pointer; }
+
 /*********************************************
  * HEADERS
  *********************************************/
@@ -315,10 +319,7 @@ body {
   font-size: 2.7em; }
 
 .reveal .title--gradient {
-  color: transparent;
-  background: url("../../../img/pink-orange-gradient.svg") repeat;
-  background-clip: text;
-  -webkit-background-clip: text; }
+  color: red; }
 
 .reveal .citation {
   position: absolute;

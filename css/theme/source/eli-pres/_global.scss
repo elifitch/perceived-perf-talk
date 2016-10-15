@@ -50,3 +50,8 @@ $color-pink: #ff4cff;
 * {
 	-webkit-font-smoothing: antialiased;
 }
+
+.reveal a:hover {
+	color: $color-pink;
+	cursor: pointer;
+}
