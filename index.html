@@ -45,7 +45,8 @@
 						<ul>
 							<li class="fragment">Why optimizing for perceived performance is smart</li>
 							<li class="fragment">How humans perceive time</li>
-							<li class="fragment">How to make passive waiting time less painful</li>
+							<!-- <li class="fragment">How to make passive waiting time less painful</li> -->
+							<li class="fragment">How to make passive waiting time seem shorter</li>
 							<li class="fragment">Predictive design</li>
 						</ul>
 					</div>
@@ -65,7 +66,11 @@
 				<section>
 					<h2>Time is a funny thing.</h2>
 					<img src="img/thinky.png" class="transparent fragment" alt="" style="width: 3em;">
-					<aside class="notes">It means different things to different ppl</aside>
+					<aside class="notes">
+						It means different things to different ppl
+						It expands and contracts
+						It's really hard to estimate, just ask any developer
+					</aside>
 				</section>
 				<!-- <section>
 					<img src="img/lol.gif" alt="">
@@ -73,7 +78,9 @@
 				</section> -->
 				<section>
 					<img src="img/dmv.jpg" alt="">
-					<aside class="notes">Anyone who's ever waited in line at the DMV can tell you, time is a human construct that doesn't exist</aside>
+					<aside class="notes">
+						Anyone who's ever been to the DMV can tell you, it can even stand completely still, run backwards, and tear apart the fabric of reality
+					</aside>
 				</section>
 				<!-- <section>
 					<img src="img/picard.jpg" alt="">
@@ -123,7 +130,13 @@
 					<h2>Time differences of <span class="fragment anim-stroke">20%</span> or less are imperceptible.</h2>
 					<h6 class="citation" href="http://torbit.com/blog/2011/11/29/psychology-of-software-performance/">Steve Seow, Microsoft</h6>
 					<aside class="notes">
-						TODO: source????  Which means around 30% is needed to make it feel like a significant improvement.  30%, especially for a large codebase, can take a very long time to get there, and take a lot of resources.
+						TODO: source????  Which means around 30% is needed to make it feel like a significant improvement.
+					</aside>
+				</section>
+				<section>
+					<h2>We don't live inside of a web performance blog post.</h2>
+					<aside class="notes">
+						30%, especially for a large codebase, can take a very long time to get there, and take a lot of resources.
 					</aside>
 				</section>
 				<section>
@@ -147,7 +160,7 @@
 						<span class="fragment">Passive phase</span>
 					</h2>
 					<aside class="notes">
-						Active is when we are mentally engaged, and passive phase is when we are focusing on the waiting time. Watching the kettle.  A key point here is that active waiting times don't feel like waiting at all.
+						Active phase characterized by a high level of mental activity, passive phase by a high level of thumb twiddling.
 					</aside>
 				</section>
 				<section>
@@ -159,7 +172,7 @@
 						Humans overestimate passive waits by 36%, per Richard Larson of MIT
 					</aside>
 				</section>
-				<section>
+				<!-- <section>
 					<h2>
 						<span class="fragment emoji">🚗💨</span>
 						<br>vs.<br>
@@ -168,7 +181,7 @@
 					<aside class="notes">
 						Riding your bike a half hour to work can seem shorter than a 20 minute drive spent sitting in traffic.
 					</aside>
-				</section>
+				</section> -->
 				<section>
 					<h2>
 						<span class="fragment emoji">🤔</span>
@@ -182,13 +195,33 @@
 					</aside>
 				</section>
 				<section>
+					<h2>
+						<span class="fragment emoji">💅</span>
+						<br>vs.<br>
+						<span class="fragment emoji u-inline-block u-pt-04">😑</span>
+					</h2>
+					<aside class="notes">
+						Getting ready for a date and then waiting for your date to come pick you up
+					</aside>
+				</section>
+				<section>
+					<h2>
+						<span class="fragment emoji">🔎</span>
+						<br>vs.<br>
+						<span class="fragment emoji u-inline-block u-pt-04">⋯⋯⋯✈️</span>
+					</h2>
+					<aside class="notes">
+						Like searching a travel site with your trip details, and waiting for it to go get you flight information
+					</aside>
+				</section>
+				<section>
 					<div class="list">
 						<h2 class="list__heading">
 							Let's do something about it
 						</h2>
 						<ul>
-							<li class="fragment">Make passive time less painful</li>
-							<li class="fragment">Make active time a greater proportion<br>of the total time</li>
+							<li class="fragment">Make passive phase less painful</li>
+							<li class="fragment">Make active phase a greater proportion<br>of the total time</li>
 						</ul>
 					</div>
 					<aside class="notes">
@@ -266,7 +299,9 @@
 					<aside class="notes">
 						Active states function just like hoverstates, but they fire when an element is clicked.
 						They immediately give your app a sense of immediacy and responsiveness which helps to keep the user's thought flow uninterrupted.
-						If you set the duration for an active animation at just past the duration folks leave their mouse button pressed, say 200ms, research conducted on mech turk showed that a subset of users won't lift their mouse button until the animation has finished, so you can coax them into leaving their mouse button pressed, expanding the head start you get from switching to mousedown.
+						
+						If you set the active animation duration to 150-200ms, people will keep their mouse button pressed for the full duration of the animation, so you can coax them into giving us a longer head start from our mousedown event.
+
 					</aside>
 				</section>
 				<section>
@@ -282,9 +317,15 @@
 				</section>
 				<section>
 					<h2>
-						<span class="fragment">P</span><span class="fragment">rogr</span><span class="fragment">ess </span><span class="fragment">ba</span><span class="fragment">...</span><span class="fragment">.</span><span class="fragment">.</span><span class="fragment">rs!</span>
+						<span>P</span><span class="fragment">rogr</span><span class="fragment">ess </span><span class="fragment">ba</span><span class="fragment">...</span><span class="fragment">.</span><span class="fragment">.</span><span class="fragment">rs!</span>
 					</h2>
-					<h4 class="fragment">Animation makes a difference.</h4>
+
+					<aside class="notes">
+						Honestly?  Someone much smarter than me could probably give an entire talk on progress bars alone. Progress bars with a counter running band animation have the appearance of running faster [[TODO MEDIA: include anim]]
+					</aside>
+				</section>
+				<section>
+					<h2>Animation makes a difference.</h2>
 
 					<aside class="notes">
 						Honestly?  Someone much smarter than me could probably give an entire talk on progress bars alone. Progress bars with a counter running band animation have the appearance of running faster [[TODO MEDIA: include anim]]
@@ -320,6 +361,19 @@
 					</aside>
 				</section>
 				<section>
+					<h2>
+						<span class="fragment anim-spin">But </span>
+						<span class="fragment anim-spin">what </span>
+						<span class="fragment anim-spin">about </span>
+						<span class="fragment anim-spin">spinners?</span>
+					</h2>
+					<h2>
+						<span class="fragment anim-spin--slow">
+							Meh.
+						</span>
+					</h2>
+				</section>
+				<section>
 					<h2 class="sub-title title--gradient">Explain Yourself</h2>
 					<aside class="notes"></aside>
 				</section>
@@ -333,13 +387,12 @@
 				<section>
 					<h2>Give users incremental information.</h2>
 					<aside class="notes">
-						A science man named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster.
-
-						One of them is uncertain waits feel longer
+						
 					</aside>
 				</section>
 				<section>
-					<iframe src="demos/progress-explain.html" frameborder="0" class="frame"></iframe>
+					<iframe src="demos/progress-explain.html" frameborder="0" class="frame" id="expl"></iframe>
+					<button class="lil-button js-reset" data-reset="expl">RESET</button>
 					<aside class="notes">
 						A science man named David Maister composed a list of prinicples that generally describe how humans perceive waits. Some of them are particularly applicable, and we can use these as a guide to take steps that make our creations feel faster.
 
@@ -391,7 +444,7 @@
 					<h1 class="title">Predictive<br>Design</h1>
 				</section>
 				<section>
-					<h2>Rather than reduce passive time,<br>increase active time's share.</h2>
+					<h2 style="font-size: 2em;">Rather than hasten passive phase, increase active phase's share.</h2>
 				</section>
 				<section>
 					<img src="img/airplane.jpg">
@@ -435,11 +488,14 @@
 						restyle?
 					</aside>
 				</section>
-				<section>
+				<!-- <section>
 					<img src="img/math.gif" alt="">
-				</section>
+				</section> -->
 				<section>
 					<img src="img/math-bird.gif" alt="">
+				</section>
+				<section>
+					<h2>Doesn't have to be crazy complicated.</h2>
 				</section>
 				<!-- <section>
 					<h2>If we know what a user's done, or is doing, we can guess at what they will do next.</h2>
@@ -488,8 +544,7 @@
 					<h2>Predictive design is a very powerful tool.</h2>
 					<h2 class="fragment">Use it <span class="fragment anim-stroke">wisely.</span></h2>
 					<aside class="notes">
-						Made a joke about machine learning and stuff, and while it doesn't have to be that complex it certainly can be.
-						If you work for a company that has a lot of data on how your users interact w/ your app, you could very feasibly make accurate predictions about what their next action/page/whatever will be without relying on something so crude as cursor position.
+						Don't do it just to do it. Lean on user data, find where using predictive design would have the most impact; use it in areas of high certainty
 					</aside>
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
@@ -505,12 +560,15 @@
 				</section>
 				<section>
 					<h2>Give users feedback.</h2>
-					<h2 class="fragment">But not too much.</h2>
+					<!-- <h2 class="fragment">But not too much.</h2> -->
 					<aside class="notes"></aside>
 				</section>
 				<section>
 					<h2>Whenever possible,<br>predict and preload.</h2>
-					<aside class="notes"></aside>
+					<aside class="notes">
+						Made a joke about machine learning and stuff, and while it doesn't have to be that complex it certainly can be.
+						If you work for a company that has a lot of data on how your users interact w/ your app, you could very feasibly make accurate predictions about what their next action/page/whatever will be without relying on something so crude as cursor position.
+					</aside>
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg">
 					<h1 class="thank-you">Thank <img class="rad-pointer" src="img/rad-pointer.png" alt=""> y'all!</h1>

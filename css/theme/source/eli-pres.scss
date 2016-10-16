@@ -65,6 +65,22 @@
 		background-size: 100% 0.15em;;
 	}
 }
+.reveal .slides section .fragment.anim-spin {
+	display: inline-block;
+	&.visible {
+		animation: 0.4s spin 1 forwards;
+	}
+}
+.reveal .slides section .fragment.anim-spin--slow {
+	display: inline-block;
+	margin-top: 1em;
+	line-height: 1;
+	transform-origin: 50% 60%;
+	&.visible {
+		animation: 3s spin linear infinite;
+	}
+}
+
 img.transparent {
 	box-shadow: none !important;
 	background: transparent !important;
@@ -119,4 +135,8 @@ img.transparent {
 @keyframes shake {
 	0%, 100% { transform: translateX(-5%) rotate(7.77deg) }
     50% { transform: translateX(5%) rotate(7.77deg) }
+}
+@keyframes spin {
+	0% { transform: rotate(0deg) }
+	100% { transform: rotate(360deg) }
 }
