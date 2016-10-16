@@ -43,6 +43,9 @@ Notes:
 * Add link and shits to final slide
 * brighten footer on hello slide
 
+## todo
+* segue from dmv to obj vs subj
+
 
 ## Bio
 Gregor Adams is a self-taught web developer with a strong focus on CSS. He works as a web-developer and front-end architect at CodeFights in San Francisco. Gregor is very active on CodePen where he shows a lot of abstract CSS experiments. While he has no special focus when is comes to CSS his most impressive works are related to 3d shapes or fractals. Most of his works are pure CSS. Even when he needs interaction in an experiment his first pick is to try to implement it in CSS. Gregor speaks at conferences and meetups with a strong urge to teach or help other developers. He pushes his own limits every day, staying up to date with the latest specs, finding fixes for browser quirks or trying to do the impossible.

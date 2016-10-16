@@ -415,6 +415,11 @@ html.footer-fade .footer {
 /*********************************************
  * State modes
  *********************************************/
+.reveal .progress {
+  height: 0.15em; }
+  .reveal .progress span {
+    background: #ff4cff; }
+
 .reveal section .st-logo {
   width: 25%;
   background: transparent;

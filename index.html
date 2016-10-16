@@ -43,10 +43,10 @@
 					<div class="list">
 						<h2 class="list__heading">Today I'll be shrieking about</h2>
 						<ul>
-							<li class="fragment">Why optimizing for perceived performance is smart</li>
+							<li class="fragment">Why focusing on perceived performance is smart</li>
 							<li class="fragment">How humans perceive time</li>
 							<!-- <li class="fragment">How to make passive waiting time less painful</li> -->
-							<li class="fragment">How to make passive waiting time seem shorter</li>
+							<li class="fragment">Techniques to manage passive waiting time</li>
 							<li class="fragment">Predictive design</li>
 						</ul>
 					</div>
@@ -107,6 +107,7 @@
 						<span class="fragment">Subjective time</span>
 					</h2>
 					<aside class="notes">
+						There are really two different types of "time".  The time we observe is so different from the time we measure.
 						Key distinction. The difference between what a clock and what a human observes.
 						The difference between a timer and watching the pot of water boil
 					</aside>
@@ -189,6 +190,8 @@
 						<span class="fragment emoji u-inline-block u-pt-04">🕐🌮🕑🌮🕒</span>
 					</h2>
 					<aside class="notes">
+						Some examples of how events break down into their active and passive phases.
+
 						Think of waiting for food. Hemming and hawwing deciding what you want to eat doesn't really feel like time stretches on for ages, but waiting for a server to bring your food somehow does.
 
 						On the web, the distinction can be filling out a form, and waiting for your order to be approved.
@@ -204,7 +207,7 @@
 						Getting ready for a date and then waiting for your date to come pick you up
 					</aside>
 				</section>
-				<section>
+				<!-- <section>
 					<h2>
 						<span class="fragment emoji">🔎</span>
 						<br>vs.<br>
@@ -213,7 +216,7 @@
 					<aside class="notes">
 						Like searching a travel site with your trip details, and waiting for it to go get you flight information
 					</aside>
-				</section>
+				</section> -->
 				<section>
 					<div class="list">
 						<h2 class="list__heading">
@@ -240,8 +243,9 @@
 						</h2>
 						<ul>
 							<li class="fragment">Respond to users immediately<!--even if nothing is happening--></li>
+							<li class="fragment">Render minimum viable layout</li>
 							<li class="fragment">Give users a sense of certainty</li>
-							<li class="fragment">Explain what's happening</li>
+							<!-- <li class="fragment">Explain what's happening</li> -->
 							<li class="fragment">Occupy users' attention</li>
 						</ul>
 					</div>
@@ -337,10 +341,10 @@
 					<h6 class="citation" style="padding-top: 0">Chris Harrison, Carnegie Mellon</h6>
 				</section>
 				<section>
-					<h2>Bars with accellerating bands feel <span class="fragment anim-stroke">12%</span> faster.</h2>
+					<h2>Bars with accelerating bands feel <span class="fragment anim-stroke">12%</span> faster.</h2>
 					<h6 class="citation">Chris Harrison, Carnegie Mellon</h6>
 					<aside class="notes">
-						Can get that accellerating feel just by applying an ease-in to the animation
+						Can get that accelerating feel just by applying an ease-in to the animation
 					</aside>
 				</section>
 
@@ -374,6 +378,25 @@
 					</h2>
 				</section>
 				<section>
+					<h2 class="sub-title title--gradient">Minimum<br>Viable Layout</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<h2>Identify what your users<br>interact with first.</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<h2>Render that first.</h2>
+					<h2  class="fragment">Lazyload everything else.</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<img src="img/amazon.jpg" alt="">
+				</section>
+				<section>
+					<img class="transparent" src="img/medium-skeleton.png" alt="">
+				</section>
+				<!-- <section>
 					<h2 class="sub-title title--gradient">Explain Yourself</h2>
 					<aside class="notes"></aside>
 				</section>
@@ -381,11 +404,14 @@
 					<h2>Unexplained waits feel longer.</h2>
 					<h6 class="citation">David Maister</h6>
 					<aside class="notes">
+						Flight delays.
+
 						Waits feel long and unjust when they're unexplained. Be honest w/ your users and tell them what's going on.  Explain to them the value of why they have to wait for something to load.
 					</aside>
 				</section>
 				<section>
-					<h2>Give users incremental information.</h2>
+					<h2>TMI isn't always a bad thing.</h2>
+					<h2 class="fragment">Give users incremental information.</h2>
 					<aside class="notes">
 						
 					</aside>
@@ -398,17 +424,10 @@
 
 						One of them is uncertain waits feel longer
 					</aside>
-				</section>
-				<section>
-					<h2>TMI is a very real thing.</h2>
-					<h2 class="fragment">Explanation draws attention.</h2>
-					<aside class="notes">
-						If a wait is short, say less than 3s, explaining things, especially at a granular level is too much. Explanation focuses users on the process of the wait and hastens the loss of their attention
-					</aside>
-				</section>
+				</section> -->
 				<section>
 					<h2 class="sub-title title--gradient">Occupy Users'<br>Attention</h2>
-					<h4 class="fragment title--gradient">Reticulate your splines.</h4>
+					<h4 class="fragment title--gradient" style="line-height: 1.2">Reticulating splines.</h4>
 					<aside class="notes"></aside>
 				</section>
 				<section>
@@ -417,7 +436,9 @@
 				</section>
 				<section>
 					<img src="img/slack-loading.gif" alt="">
-					<aside class="notes"></aside>
+					<aside class="notes">
+						Animation can also play another role where because it holds attention, it can be used to elegantly pass attention to where it's needed. how it goes from loading to skeleton to ui.
+					</aside>
 				</section>
 				<section>
 					<img src="img/human-revolution-loading.jpg" alt="">
@@ -425,7 +446,9 @@
 				</section>
 				<section>
 					<img src="img/uber-waiting-game.png" alt="" style="height: 45vh;">
-					<aside class="notes"></aside>
+					<aside class="notes">
+						Interactive.
+					</aside>
 				</section>
 				<!-- <section>
 					<h2>Animation</h2>
@@ -551,6 +574,26 @@
 					<h1 class="title">TLDR;</h1>
 				</section>
 				<section>
+					<h2>At the end of the day, what matters is how it <span class="fragment anim-stroke">feels.</span></h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<!-- <h2>Focus on perceived performance.</h2> -->
+					<!-- <h2 class="fragment">Focus on the user.</h2> -->
+					<h2>Think about how you<br>want to use your resources.</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<h2>Rely on data to<br>make sound decisions.</h2>
+					<aside class="notes"></aside>
+				</section>
+				<section>
+					<!-- <h2>Focus on perceived performance.</h2> -->
+					<!-- <h2 class="fragment">Focus on the user.</h2> -->
+					<h2>Focus on the user.</h2>
+					<aside class="notes"></aside>
+				</section>
+				<!-- <section>
 					<h2>Optimizing for perceived performance is more efficient.</h2>
 					<aside class="notes"></aside>
 				</section>
@@ -560,7 +603,7 @@
 				</section>
 				<section>
 					<h2>Give users feedback.</h2>
-					<!-- <h2 class="fragment">But not too much.</h2> -->
+					[[[<h2 class="fragment">But not too much.</h2>]]]
 					<aside class="notes"></aside>
 				</section>
 				<section>
@@ -569,9 +612,9 @@
 						Made a joke about machine learning and stuff, and while it doesn't have to be that complex it certainly can be.
 						If you work for a company that has a lot of data on how your users interact w/ your app, you could very feasibly make accurate predictions about what their next action/page/whatever will be without relying on something so crude as cursor position.
 					</aside>
-				</section>
+				</section> -->
 				<section data-background-image="img/pink-orange-gradient.svg">
-					<h1 class="thank-you">Thank <img class="rad-pointer" src="img/rad-pointer.png" alt=""> y'all!</h1>
+					<h1 class="thank-you">Thanks <img class="rad-pointer" src="img/rad-pointer.png" alt=""> y'all!</h1>
 					<h4 style="color: rgba(0,0,0,0.4)">http://eli.wtf/talks/perceived-perf-talk</h4>
 					<!-- 
 					<h2>y'all!</h2> -->
@@ -593,7 +636,7 @@
 			Reveal.initialize({
 				history: true,
 				controls: false,
-				progress: false,
+				progress: true,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [

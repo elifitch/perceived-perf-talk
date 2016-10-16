@@ -15,6 +15,12 @@
 * {
 	// color: darken(#FF4DFD, 10%) !important;
 }
+.reveal .progress {
+	height: 0.15em;
+	span {
+		background: $color-pink;
+	}
+}
 
 .reveal section .st-logo {
 	width: 25%;
