@@ -373,7 +373,8 @@ body {
   font-style: italic;
   color: rgba(0, 0, 0, 0.4);
   font-family: "Brandon Grotesque", Impact, sans-serif !important;
-  font-weight: 800; }
+  font-weight: 800;
+  align-items: center; }
 
 .reveal .footer__logo {
   font-size: 1.4em;
@@ -381,6 +382,10 @@ body {
 
 .reveal .footer__social {
   font-size: 1.2em;
+  color: inherit; }
+
+.reveal .footer__small {
+  font-size: 0.75em;
   color: inherit; }
 
 html.footer-fade .footer {

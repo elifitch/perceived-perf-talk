@@ -12,6 +12,7 @@
 	color: rgba(0,0,0,.4);
 	font-family: $headingFont !important;
 	font-weight: 800;
+	align-items: center;
 }
 .reveal .footer__logo {
 	font-size: 1.4em;
@@ -19,6 +20,10 @@
 }
 .reveal .footer__social {
 	font-size: 1.2em;
+	color: inherit;
+}
+.reveal .footer__small {
+	font-size: 0.75em;
 	color: inherit;
 }
 
