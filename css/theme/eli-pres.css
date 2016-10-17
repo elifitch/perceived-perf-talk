@@ -4,6 +4,24 @@
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@font-face {
+  font-family: 'brandon grotesque';
+  src: url("../../fonts/brandon-grotesque-blk-it.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/brandon-grotesque-blk-it?#iefix") format("embedded-opentype"), url("../../fonts/brandon-grotesque-blk-it.woff") format("woff"), url("../../fonts/brandon-grotesque-blk-it.ttf") format("truetype"), url("../../fonts/brandon-grotesque-blk-it#db83a1450782399269807c88b8666559") format("svg");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 800; }
+
+@font-face {
+  font-family: 'pinopolis';
+  src: url("../../fonts/pinopolis.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/pinopolis.eot?#iefix") format("embedded-opentype"), url("../../fonts/pinopolis.woff") format("woff"), url("../../fonts/pinopolis.ttf") format("truetype"), url("../../fonts/pinopolis.svg#8ff9940f08c2041fdb659662283797d3") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+
 /*********************************************
  * CUSTOM VARS
  *********************************************/
@@ -15,7 +33,7 @@ body {
   background-color: #171717; }
 
 .reveal {
-  font-family: "Pinopolis-Regular", sans-serif;
+  font-family: "pinopolis", sans-serif;
   font-size: 36px;
   font-weight: normal;
   color: #fafafa; }
@@ -41,7 +59,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #fafafa;
-  font-family: "Brandon Grotesque", Impact, sans-serif;
+  font-family: "brandon grotesque", Impact, sans-serif;
   font-weight: 600;
   line-height: 1;
   letter-spacing: normal;
@@ -303,7 +321,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  font-family: "Brandon Grotesque", Impact, sans-serif !important; }
+  font-family: "brandon grotesque", Impact, sans-serif !important; }
 
 .reveal h1 {
   margin-bottom: 0.5em; }
@@ -356,7 +374,7 @@ body {
   background-repeat: no-repeat;
   background-position: 0 1em;
   overflow: hidden;
-  font-family: "Brandon Grotesque", Impact, sans-serif;
+  font-family: "brandon grotesque", Impact, sans-serif;
   background-image: linear-gradient(to bottom, #ff4cff 0%, #ff4cff 100%);
   text-shadow: 0px 0.025em 0.1em rgba(0, 0, 0, 0.2); }
 
@@ -372,7 +390,7 @@ body {
   bottom: 0em;
   font-style: italic;
   color: rgba(0, 0, 0, 0.4);
-  font-family: "Brandon Grotesque", Impact, sans-serif !important;
+  font-family: "brandon grotesque", Impact, sans-serif !important;
   font-weight: 800;
   align-items: center; }
 
@@ -410,7 +428,7 @@ html.footer-fade .footer {
   background-repeat: no-repeat;
   background-position: 0 1em;
   overflow: hidden;
-  font-family: "Brandon Grotesque", Impact, sans-serif;
+  font-family: "brandon grotesque", Impact, sans-serif;
   background-image: linear-gradient(to bottom, #ff4cff 0%, #ff4cff 100%);
   text-shadow: 0px 0.025em 0.1em rgba(0, 0, 0, 0.15); }
 
@@ -462,7 +480,7 @@ html.footer-fade .footer {
   background-repeat: no-repeat;
   background-position: 0 1em;
   overflow: hidden;
-  font-family: "Brandon Grotesque", Impact, sans-serif;
+  font-family: "brandon grotesque", Impact, sans-serif;
   background-image: linear-gradient(to bottom, #ff4cff 0%, #ff4cff 100%);
   text-shadow: 0px 0.025em 0.1em rgba(0, 0, 0, 0.2); }
   .reveal .slides section .fragment.anim-stroke.visible {
@@ -586,7 +604,7 @@ img.transparent {
 .lil-button {
   cursor: pointer;
   font-size: 0.6em;
-  font-family: "Pinopolis-Regular", sans-serif;
+  font-family: "pinopolis", sans-serif;
   color: rgba(0, 0, 0, 0.4);
   appearance: none;
   background: transparent;
