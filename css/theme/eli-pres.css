@@ -340,12 +340,16 @@ body {
   background: url("../../img/pink-orange-gradient.svg") repeat;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  background-size: 100%; }
 
 .reveal .citation {
   position: absolute;
   padding-top: 1em;
   width: 100%;
+  color: rgba(0, 0, 0, 0.6); }
+
+.reveal .end-link {
   color: rgba(0, 0, 0, 0.6); }
 
 /*********************************************
@@ -389,7 +393,7 @@ body {
   position: absolute;
   bottom: 0em;
   font-style: italic;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.6);
   font-family: "brandon grotesque", Impact, sans-serif !important;
   font-weight: 800;
   align-items: center; }
@@ -407,7 +411,7 @@ body {
   color: inherit; }
 
 html.footer-fade .footer {
-  color: rgba(0, 0, 0, 0.15); }
+  color: rgba(0, 0, 0, 0.2); }
 
 /*********************************************
  * UTILS

@@ -9,7 +9,7 @@
 	position: absolute;
 	bottom: 0em;
 	font-style: italic;
-	color: rgba(0,0,0,.4);
+	color: rgba(0,0,0,.6);
 	font-family: $headingFont !important;
 	font-weight: 800;
 	align-items: center;
@@ -28,5 +28,5 @@
 }
 
 html.footer-fade .footer {
-	color: rgba(0,0,0,.15);
+	color: rgba(0,0,0,.2);
 }
