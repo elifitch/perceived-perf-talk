@@ -6,9 +6,9 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 @font-face {
   font-family: 'brandon grotesque';
-  src: url("../../fonts/brandon-grotesque-blk-it.eot");
+  src: url("../../fonts/brandon_bld_it.eot");
   /* IE9 Compat Modes */
-  src: url("../../fonts/brandon-grotesque-blk-it?#iefix") format("embedded-opentype"), url("../../fonts/brandon-grotesque-blk-it.woff") format("woff"), url("../../fonts/brandon-grotesque-blk-it.ttf") format("truetype"), url("../../fonts/brandon-grotesque-blk-it#db83a1450782399269807c88b8666559") format("svg");
+  src: url("../../fonts/brandon_bld_it?#iefix") format("embedded-opentype"), url("../../fonts/brandon_bld_it.woff") format("woff"), url("../../fonts/brandon_bld_it.ttf") format("truetype"), url("../../fonts/brandon_bld_it#db83a1450782399269807c88b8666559") format("svg");
   /* Legacy iOS */
   font-style: italic;
   font-weight: 800; }
@@ -456,7 +456,7 @@ html.footer-fade .footer {
   height: 100vmin; }
   @media screen and (min-width: 700px) {
     .frame {
-      height: 40vh; } }
+      height: 50vh; } }
 
 .active {
   transition: 0.2s all;
