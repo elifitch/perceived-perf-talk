@@ -43,8 +43,10 @@ Notes:
 * Add link and shits to final slide
 * brighten footer on hello slide
 
-## todo
-* segue from dmv to obj vs subj
+## Feedback from CSSDevConf
+* Mention mobile
+* talk about fake progress bars
+* stress that you don't communicate with server on keydown, just load assets for next page; predictive design is for incoming, not so much outgoing data
 
 
 ## Bio
