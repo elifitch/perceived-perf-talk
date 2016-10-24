@@ -652,3 +652,6 @@ img.transparent {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
+.print-pdf .reveal .slides {
+  background-color: #171717; }

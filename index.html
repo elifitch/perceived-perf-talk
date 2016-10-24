@@ -31,12 +31,15 @@
 					<h3>The only kind that really matters.</h3>
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
+					<h2>Since there's no recording of this talk, press 'S' for speaker notes!sdfasdfaaasdfaaasdf</h2>
+				</section>
+				<!-- <section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
 					<h2>#PerceivedPerf</h2>
 					<h3>(504) 229-6828</h3>
 					<h4 class="fragment">#PerceivedPerf [1-5] [comment]</h4>
 					<h4 class="fragment">Example:</h4>
 					<h4 class="fragment">#PerceivedPerf 5 speaker is v handsome &amp; snappy dresser imo</h4>
-				</section>
+				</section> -->
 				<section>
 					<h2>Hi, I'm Eli.</h2>
 					<h4 class="fragment">I make weird stuff on the internet</h4>
@@ -45,6 +48,11 @@
 					<img class="st-logo" src="img/st.svg" alt="">
 					<img class="st-logo fragment" src="img/codepen.svg" alt="">
 					<img class="st-logo fragment" src="img/skull-fella.png" alt="">
+					<aside class="notes">
+						<p>I lead a team of amazing developers making a WebGL event space diagramming app for Social Tables, a startup in Washington, DC.</p>
+						<p>I also co-organize the DC Codepen Meetup.</p>
+						<p>I love to make 3d art, animations, and games in my free time.</p>
+					</aside>
 				</section>
 				<section>
 					<div class="list">
@@ -56,6 +64,15 @@
 							<li class="fragment">Techniques to manage passive waiting time</li>
 							<li class="fragment">Predictive design</li>
 						</ul>
+						<aside class="notes">
+							<p>Agenda:</p>
+							<ul>
+								<li>Why focusing on perceived performance over objective performance is often a good idea.</li>
+								<li>How people sense time.</li>
+								<li>How to use what we learn about how humans sense time to make waiting/loading time less parinful</li>
+								<li>Predictive design: the sneaky art of predicting user behavior and loading things in the background before they're required.</li>
+							</ul>
+						</aside>
 					</div>
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
@@ -68,15 +85,19 @@
 						<br>
 						<span class="fragment">is a matter of time.</span>
 					</h2>
-					<aside class="notes">We talk about web performance in terms of time. Seconds to first paint, latency, download speed, etc </aside>
+					<aside class="notes">
+						<p>We talk about web performance in terms of time. Seconds to first paint, latency, download speed, etc.</p>
+					</aside>
 				</section>
 				<section>
 					<h2>Time is a funny thing.</h2>
 					<img src="img/thinky.png" class="transparent" alt="" style="width: 3em;">
 					<aside class="notes">
-						It means different things to different ppl
-						It expands and contracts
-						It's really hard to estimate, just ask any developer
+						<ul>
+							<li>Time changes with the situation</li>
+							<li>It speeds up and slows down.</li>
+							<li>It's really hard to estimate, etc</li>
+						</ul>
 					</aside>
 				</section>
 				<!-- <section>
@@ -86,7 +107,7 @@
 				<section>
 					<img src="img/dmv.jpg" alt="">
 					<aside class="notes">
-						Anyone who's ever been to the DMV can tell you, it can even stand completely still, run backwards, and tear apart the fabric of reality
+						<p>Anyone who's ever been to the DMV can tell you, it can even stand completely still, run backwards, and tear apart the fabric of reality</p>
 					</aside>
 				</section>
 				<!-- <section>
@@ -114,49 +135,51 @@
 						<span class="fragment">Subjective time</span>
 					</h2>
 					<aside class="notes">
-						There are really two different types of "time".  The time we observe is so different from the time we measure.
-						Key distinction. The difference between what a clock and what a human observes.
-						The difference between a timer and watching the pot of water boil
+						<p>At the heart of this is the difference between objective and subjective time.</p>
+						<p>Objective time is what a clock measures and subjective time is what we all perceive.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>We optimize for objective time<br><span class="fragment">but that isn't very efficient.</span></h2>
 					<aside class="notes">
-						Objective time is easy to measure, that's why we focus on it.
-
-						But if the goal is to make our shit feel fast, just addressing objective time is not very efficient.
+						<p>When users report that our app is slow, we usually focus on making it objectively faster. Reducing load time by a certain percentage, etc.</p>
+						<p>Objective time is easy to measure, that's why we focus on it.</p>
+						<p>But if the goal is to make our shit feel fast, just addressing objective time is not very efficient.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>Just Noticeable Difference.</h2>
 					<aside class="notes">
-						The field of Psychophysics, the raddest name for a science btw, has this concept of just noticeable difference.
-						Basically any human observable phenomena needs to pass a threshhold or else they'll just say "seems about the same to me"
+						<p>The field of Psychophysics, the raddest name for a science btw, has this concept of just noticeable difference.</p>
+						<p>Any human observable phenomena needs to have a certain level of difference in order for that difference to be noticieable.</p>
+						<p>If you show someone two light bulbs, and ask which is brighter, a bulb will have to be some level of brightness above the other for the difference to be perceptible.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>Time differences of <span class="fragment anim-stroke">20%</span> or less are imperceptible.</h2>
 					<h6 class="citation" href="http://torbit.com/blog/2011/11/29/psychology-of-software-performance/" target="_blank">Steve Seow, Microsoft</h6>
 					<aside class="notes">
-						TODO: source????  Which means around 30% is needed to make it feel like a significant improvement.
+						<p>Steve Seow of microsoft found that the JND threshold for time is about 20%.</p>
+						<p>So if your app is slow, and you focus on improving objective speed, it'll have to be 20% faster than before for the difference to even be noticeable.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>Shoot for <span class="fragment anim-stroke">30%</span> speedup.</h2>
 					<aside class="notes">
-						Which means around 30% is needed to make it feel like a significant improvement.
+						<p>Which means around 30% is needed to make it feel like an impactful improvement.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>We don't live inside of a web performance blog post.</h2>
 					<aside class="notes">
-						30%, especially for a large codebase, can take a very long time to get there, and take a lot of resources.
+						<p>We don't usually get to exert absolute control over everything, especially in a large codebase.</p>
 					</aside>
 				</section>
 				<section>
 					<img src="img/fucked-down-here.gif" alt="" style="width: 60%">
 					<aside class="notes">
-						We don't live in a blog post, reality is much more like this.
+						<p>In fact our jobs are often times a lot more like this.</p>
+						<p>A 30% speedup, especially for a large codebase, can take a lot of resources &amp; coordination to achieve.</p>
 					</aside>
 				</section>
 				<!-- <section>
@@ -171,13 +194,12 @@
 						Better <span class="emoji">💥</span> for <span class="emoji">🤑</span>.
 					</h2>
 
-					<aside class="notes">The types of scenarios considered in many web performance studies/examples are really clean slate/pie in the sky scenarios that don't acknowledge the constraints within which we as devs operate. Sometimes you don't have a great deal of control over asset delivery, your application requires long asynchronous processes that cannot be easily improved, etc. We sell ourselves short by focusing on improving objective time when we can sometimes make much greater strides to how fast our apps &amp; sites *feel* without improving their actual speed at all.</aside>
+					<aside class="notes">
+						<p>Sometimes you don't have a great deal of control over asset delivery, your application requires long asynchronous processes that cannot be easily improved, etc. We sell ourselves short by focusing on improving objective time when we can sometimes make much greater strides to how fast our apps &amp; sites *feel* without improving their actual speed at all.</p>
+					</aside>
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
-					<h1 class="title">How Humans<br>Perceive Time</h1>
-					<aside class="notes">
-						TODO: fix title
-					</aside>
+					<h1 class="title">How Humans<br>Sense Time</h1>
 				</section>
 				<section>
 					<h2>
@@ -186,7 +208,8 @@
 						<span class="fragment">Passive phase</span>
 					</h2>
 					<aside class="notes">
-						Active phase characterized by a high level of mental activity, passive phase by a high level of thumb twiddling.
+						<p>Activities tend to be divided into active and passive phases.</p>
+						<p>Active phase characterized by a high level of mental activity, passive phase by a high level of thumb twiddling.</p>
 					</aside>
 				</section>
 				<section>
@@ -195,7 +218,7 @@
 					</h2>
 					<h6 class="citation" href="http://www.jstor.org/stable/171439?seq=1#page_scan_tab_contents" target="_blank">Richard Larson, MIT</h6>
 					<aside class="notes">
-						Humans overestimate passive waits by 36%, per Richard Larson of MIT
+						<p>Humans overestimate passive waits by 36%, per Richard Larson of MIT</p>
 					</aside>
 				</section>
 				<section>
@@ -205,7 +228,7 @@
 						<span class="fragment emoji u-inline-block u-pt-04">🚐🚗🚐</span>
 					</h2>
 					<aside class="notes">
-						Riding your bike a half hour to work can seem shorter than a 20 minute drive spent sitting in traffic.
+						<p>We've all been in that situation where the faster route involves sitting in traffic on a main route, but it feels much faster to scoot along through side streets, even if it does take a few more minutes to get there.</p>
 					</aside>
 				</section>
 				<section>
@@ -215,11 +238,7 @@
 						<span class="fragment emoji u-inline-block u-pt-04">🕐🌮🕑🌮🕒</span>
 					</h2>
 					<aside class="notes">
-						Some examples of how events break down into their active and passive phases.
-
-						Think of waiting for food. Hemming and hawwing deciding what you want to eat doesn't really feel like time stretches on for ages, but waiting for a server to bring your food somehow does.
-
-						On the web, the distinction can be filling out a form, and waiting for your order to be approved.
+						<p>Think of waiting for food. Hemming and hawwing deciding what you want to eat doesn't really feel like time stretches on for ages, but waiting for a server to bring your food somehow does.</p>
 					</aside>
 				</section>
 				<!-- <section>
@@ -253,7 +272,7 @@
 						</ul>
 					</div>
 					<aside class="notes">
-						
+						<p>Know that we know a bit about how people sense time, we can do these two things to make things feel faster</p>
 					</aside>
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
@@ -274,8 +293,13 @@
 						</ul>
 					</div>
 					<aside class="notes">
-						There are a lot of little things we can do to make passive waiting less shitty,
-						I believe these 4 provide the most impact
+						<p>These are my 4 favorite ways to manage user waiting time</p>
+						<ul>
+							<li>Respond immediately.</li>
+							<li>Let users know where they are in the waiting process; how much time is elapsed and how much is left to go.</li>
+							<li>Especially with long waits, keeping user attention focused on other things.</li>
+							<li>Render minimum viable layout, to get users out of a passive phase and into an interactive, usable page ASAP</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -286,15 +310,13 @@
 					<h2>Takes <span class="fragment anim-stroke">~1 second</span> for<br>flow to be disrupted.</h2>
 					<h6 class="citation" href="https://www.nngroup.com/articles/response-times-3-important-limits/" target="_blank">Jakob Nielsen, Neilsen Norman Group</h6>
 					<aside class="notes">
-						in a pretty famous study Jakob Nielsen of the Nielsen Norman Group showed that it took
-						about 1 sec for peoples flow of thought to be disrupted &amp; for them to mentally transition to a waiting state.
+						<p>In a pretty famous study Jakob Nielsen of the Nielsen Norman Group showed that it takes about 1 sec for peoples flow of thought to be disrupted &amp; for them to mentally transition to a waiting state.</p>
 					</aside>
-					<!-- <h4 class="fragment">So this simple change gets you half way to the 20% threshhold!</h4> -->
 				</section>
 				<section>
 					<h2>Let's pack as much loading into that 1 second as possible.</h2>
 					<aside class="notes">
-						If it takes 1 sec for ppl to even realize they're waiting, lets pack as much as possible into that 1 second.
+						<p>If it takes 1 sec for ppl to even consciously realize they're waiting, lets pack as much as possible into that 1 second.</p>
 					</aside>
 				</section>
 				<section>
@@ -304,32 +326,31 @@
 						<span class="fragment">Click event</span>
 					</h2>
 					<aside class="notes">
-						One of my favorite ways to do that is replacing click events with mousedown events.
-						Click events actually fire not when the mouse button goes down, but when it comes back up again.
-						So there's this gap when the user has clicked down, but the click event has yet to fire.
+						<p>One of my favorite ways to do that is replacing click events with mousedown (and touchstart) events.</p>
+						<p>Click events actually fire not when the mouse button goes down, but when it comes back up again.</p>
+						<p>So there's this gap when the user has clicked down, but the click event has yet to fire.</p>
+						<p>We can load things when the mouse button goes down, and only display them when the click event fires as the user releases their mouse button.</p>
 					</aside>
 				</section>
 				<section>
 					<iframe src="demos/mousedown.html" frameborder="0" class="frame"></iframe>
 					<aside class="notes">
-						
+						<p>Made a little demo to show how long users usually hold their mouse buttons down.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>Mousedown gives you a<br><span class="fragment anim-stroke">100-150ms</span> head start.</h2>
 					<aside class="notes">
-						
+						<p>Folks tend to hold their mouse buttons down for 100-150ms; Found this through research on mechanical turk.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>Stay <span class="active">:active,</span> kids!</h2>
 					<h4 class="fragment">Animation duration sweet spot is 150-200ms.</h4>
 					<aside class="notes">
-						Active states function just like hoverstates, but they fire when an element is clicked.
-						They immediately give your app a sense of immediacy and responsiveness which helps to keep the user's thought flow uninterrupted.
-						
-						If you set the active animation duration to 150-200ms, people will keep their mouse button pressed for the full duration of the animation, so you can coax them into giving us a longer head start from our mousedown event.
-
+						<p>Active states function just like hoverstates, but they fire when an element is clicked.</p>
+						<p>They immediately give your app a sense of immediacy and responsiveness which helps to keep the user's thought flow uninterrupted.</p>
+						<p>If you set the active animation duration to 150-200ms, people will keep their mouse button pressed for the full duration of the animation; so instead of holding their mouse button down for 100-150ms, they hold it down for 150-200ms. You end up coaxing them into giving us a longer head start from our mousedown event.</p>
 					</aside>
 				</section>
 				<section>
@@ -340,7 +361,7 @@
 					<h2>Uncertain waits feel longer.</h2>
 					<h6 class="citation" href="http://www.columbia.edu/~ww2040/4615S13/Psychology_of_Waiting_Lines.pdf" target="_blank">David Maister</h6>
 					<aside class="notes">
-						Postulated by business consultant but confirmed in several studies. If people don't have a sense of how much has elapsed and how much is left.
+						<p>Postulated by business consultant David Maister but confirmed in several studies. If people don't have a sense of how much has elapsed and how much is left, the wait feels longer.</p>
 					</aside>
 				</section>
 				<section>
@@ -349,7 +370,7 @@
 					</h2>
 
 					<aside class="notes">
-						Honestly?  Someone much smarter than me could probably give an entire talk on progress bars alone. Progress bars with a counter running band animation have the appearance of running faster [[TODO MEDIA: include anim]]
+						<p>This is a job for progress bars!</p>
 					</aside>
 				</section>
 				<section>
@@ -357,19 +378,24 @@
 					<h2 class="fragment anim-bounce"><span>A</span><span>n</span><span>i</span><span>m</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span>&nbsp;</span><span>m</span><span>a</span><span>k</span><span>e</span><span>s</span><span>&nbsp;</span><span>a</span><span>&nbsp;</span><span>d</span><span>i</span><span>f</span><span>f</span><span>e</span><span>r</span><span>e</span><span>n</span><span>c</span><span>e</span><span>.</span></h2>
 
 					<aside class="notes">
-						Honestly?  Someone much smarter than me could probably give an entire talk on progress bars alone. Progress bars with a counter running band animation have the appearance of running faster [[TODO MEDIA: include anim]]
+						<p>Progress bars are not all created equal, and certain animations can make them feel faster.</p>
 					</aside>
 				</section>
 				<section>
 					<!-- <iframe src="https://codepen.io/EliFitch/full/179fd5d77c41b213e2cb813a047faeaa/" frameborder="0" class="frame"></iframe> -->
 					<iframe src="demos/progress.html" frameborder="0" class="frame"></iframe>
 					<h6 class="citation" style="padding-top: 0" target="_blank" href="http://www.chrisharrison.net/projects/progressbars2/ProgressBarsHarrison.pdf">Chris Harrison, Carnegie Mellon</h6>
+					<aside class="notes">
+						<p>Chris Harrison, a grad student at Carnegie Mellon found that progress bars with bands that animate in the opposite direction of the progress make the bar seem to fill faster.</p>
+						<p>Same principle of being on a train, and another train is coming by the opposite direction, you look out the window to see the other train whizzing by, and it seems like you're going twice as fast.</p>
+						<p>In a followup study he found that if those bands accellerate, the bar feels faster still. Can get that accelerating feel just by applying an ease-in to the animation.</p>
+					</aside>
 				</section>
 				<section>
 					<h2>Bars with accelerating<br>bands feel <span class="fragment anim-stroke">12%</span> faster.</h2>
 					<h6 class="citation" target="_blank" href="http://www.chrisharrison.net/projects/progressbars2/ProgressBarsHarrison.pdf">Chris Harrison, Carnegie Mellon</h6>
 					<aside class="notes">
-						Can get that accelerating feel just by applying an ease-in to the animation
+						<p>He found that they feel 12% faster.  So just from this one change we can get half way to our Just Noticeable Difference threshold.</p>
 					</aside>
 				</section>
 
@@ -384,9 +410,11 @@
 					</div>
 
 					<aside class="notes">
-						Any action taking less than 1 or so seconds doesn't need an indicator at all, thought is uninterrupted.
-						1-3 seconds displaying a spinner or basic prog is preferable. Don't want to include lots of explanation and distract users from the task at hand
-						3-10 Now you want to have progress bars with explanation text and/or animation
+						<ul>
+							<li>Any action taking less than 1 or so seconds doesn't need an indicator at all, thought is uninterrupted.  By showing an indicator here, you're taking their focus away from the action they just took and forcing them to focus on the fact that they have to wait for the app to respond. So you are in effect making the app feel *slower*.</li>
+							<li>1-3 seconds displaying a progress bar is preferable. Don't need to include lots of written explanation as to what the app is doing, since this is within the window where most people still have patience for what the app is doing.</li>
+							<li>3-10s? Include an explanation as to what the app is doing. These durations can seem unreasonable if you don't explain to the user what is happening.</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -659,7 +687,7 @@
 
 			<div class="footer">
 				<a class="footer__logo" href="http://eli.wtf/" target="_blank">Eli.wtf</a>
-				<span href="" class="footer__small">#PerceivedPerf<br><span class="footer__small">(504) 229-6828</span></span>
+				<!-- <span href="" class="footer__small">#PerceivedPerf<br><span class="footer__small">(504) 229-6828</span></span> -->
 				<a class="footer__social" href="http://twitter.com/elifitch" target="_blank">@elifitch</a>
 			</div>
 		</div>

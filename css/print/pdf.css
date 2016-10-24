@@ -7,7 +7,7 @@
 
 * {
 	-webkit-print-color-adjust: exact;
-	color: black !important;
+	// color: black !important;
 }
 
 body {
