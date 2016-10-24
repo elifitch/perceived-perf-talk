@@ -429,6 +429,12 @@
 							Meh.
 						</span>
 					</h2>
+					<aside class="notes">
+						<p>Spinners have a pretty narrow use case.</p>
+						<p>Don't want to use them if the expected wait time is less than 1s or so, because user flow won't be disrupted.</p>
+						<p>Don't want to use them if the expected wait time is ~2.5s or up, since users need certainty as to where they are in the process.</p>
+						<p>So you're looking at using them for loads between 1 - 2ish seconds.</p>
+					</aside>
 				</section>
 				<!-- <section>
 					<h2 class="sub-title title--gradient">Explain Yourself</h2>
@@ -466,22 +472,26 @@
 				</section>
 				<section>
 					<img src="img/zoidberg.gif" alt="">
-					<aside class="notes"></aside>
+					<aside class="notes">
+						<p>With long waits, up to and past 10 seconds. Sometimes you just have to discract users and keep them from focusing on how long the wait is.</p>
+					</aside>
 				</section>
 				<section>
 					<img src="img/slack-loading.gif" alt="">
 					<aside class="notes">
-						Animation can also play another role where because it holds attention, it can be used to elegantly pass attention to where it's needed. how it goes from loading to skeleton to ui.
+						<p>Slack transitions from a visually arresting loader with an explanation, to another loader with an extraneous quotation to read, and then to a skeleton UI, and then to the full UI.  Holding user attention through this process.</p>
 					</aside>
 				</section>
 				<section>
 					<img src="img/human-revolution-loading.jpg" alt="">
-					<aside class="notes"></aside>
+					<aside class="notes">
+						<p>Games frequently give players tips to read during long loading screens. Tips require high levels of mental activity to read them, digest them, and integrate them into the player's existing play style. Thus holding attention.</p>
+					</aside>
 				</section>
 				<section>
 					<img src="img/uber-waiting-game.png" alt="" style="height: 45vh;">
 					<aside class="notes">
-						Interactive.
+						<p>Uber's old screen when it was matching you with a driver was interactive.  You could draw little light doodles in this creative play space.  If you know the wait is going to be *very* long, give users something interactive to play with, because nothing holds attention like play.</p>
 					</aside>
 				</section>
 				<!-- <section>
@@ -494,7 +504,7 @@
 					<h2>If this feels like cheating,<br>that's because it is.</h2>
 					<h4 class="fragment">You dirty cheaters, you.</h4>
 					<aside class="notes">
-						This information doesn't have to be directly related to what you're doing; and that's okay.
+						<p>This information or experience you're feeding a userdoesn't have to be directly related to what you're doing; and that's okay.</p>
 					</aside>
 				</section>
 				<section>
@@ -503,22 +513,34 @@
 				</section>
 				<section>
 					<h2 style="font-size: 2em;">Rather than hasten passive phase, increase active phase's share.</h2>
+					<aside class="notes">
+						<p>rather than making passive waiting less shitty, this gets you out of a passive state, and into an active state with a usable app/site ASAP.</p>
+					</aside>
 				</section>
 				<section>
 					<h2>Identify what your users<br>interact with first.</h2>
-					<aside class="notes"></aside>
+					<aside class="notes">
+						<p>First, use data to identify what your users interact with first.</p>
+					</aside>
 				</section>
 				<section>
 					<img src="img/amazon.jpg" alt="">
+					<aside class="notes">
+						<p>Amazon identified that it's the main menu and this hero area.</p>
+					</aside>
 				</section>
 				<section>
 					<h2>Render that first.</h2>
 					<h2  class="fragment">Lazyload everything else.</h2>
-					<aside class="notes"></aside>
+					<aside class="notes">
+						<p>Load this first and bring in everything else afterwards.  For most users you'll be delivering them an experience that contains the UI they want to use anyways.</p>
+					</aside>
 				</section>
 				<section>
 					<h2>Not as simple as "above the fold".</h2>
-					<aside class="notes"></aside>
+					<aside class="notes">
+						<p>There are a lot of "critical path" or "critical css" build libraries that will inline the styles of elements above a defined "fold" to load those elements fully styled with one request.  This doesn't account for any JS that might be needed to use this, nor do you necessarily want everything above some fold. Find out what *your* users need, and build your own custom minimum viable layout to suit them.</p>
+					</aside>
 				</section>
 				<!-- <section>
 					<img class="transparent" src="img/medium-skeleton.png" alt="">
@@ -528,15 +550,27 @@
 				</section>
 				<section>
 					<img src="img/airplane.jpg">
+					<aside class="notes">
+						<p>Great story that explains what predictive design is all about.</p>
+					</aside>
 				</section>
 				<section>
 					<img src="img/baggage-claim-sleep.gif" style="width: 50%">
+					<aside class="notes">
+						<p>Houston airport got lots of complaints from users that the waiting time for bags to emerge on the baggage carousel was too long. They tried to fix this by hiring more baggage handlers and spending lots of money to upgrade their baggage carousel infrastructure.  The complaints stayed steady.</p>
+					</aside>
 				</section>
 				<section>
 					<h2 class="emoji">🏃🏃🏃🏃🏃</h2>
+					<aside class="notes">
+						<p>Some consultants had the great idea to structure the arrival terminals so it takes longer for them to walk to the baggage claim, and to route passengers bags to the furthest baggage carousel at the baggage claim plaza. Thus passengers would spend more time in an active phase (walking) than they would in a passive phase (waiting).</p>
+					</aside>
 				</section>
 				<section>
 					<img src="img/baggage-claim-kramer.gif">
+					<aside class="notes">
+						<p>They leaned on what they understood about passenger behavior (walking directly to the baggage claim) and structured their experience so the bags "loaded" while the user was still walking there.</p>
+					</aside>
 				</section>
 				<!-- <section>
 					<h2>
@@ -551,7 +585,7 @@
 				<section>
 					<h2>We can do something similar.</h2>
 					<aside class="notes">
-						Behavior of disembarking passengers is *very* predictable. They mostly travel to the baggage claim by the fastest possible route, and then procede to ground transportation.  They leaned on their understanding of how passengers behave, and used it to their advantage to make active time a much greater proportion of the experience.
+						<p>Behavior of disembarking passengers is *very* predictable. They mostly travel to the baggage claim by the fastest possible route, and then procede to ground transportation.  They leaned on their understanding of how passengers behave, and used it to their advantage to make active time a much greater proportion of the experience.</p>
 					</aside>
 				</section>
 				<section>
@@ -559,23 +593,26 @@
 					<img class="fragment" src="img/snowflake.gif" alt="">
 					<h2 class="fragment">Behavior follows patterns.</h2>
 					<aside class="notes">
-						restyle?
+						<p>Embrace the idea that individual users aren't unique snowflakes; their behavior follows patterns.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>If we can predict what users will do, why not preload their next action before they take it?</h2>
-					<aside class="notes">
-						restyle?
-					</aside>
 				</section>
 				<!-- <section>
 					<img src="img/math.gif" alt="">
 				</section> -->
 				<section>
 					<img src="img/math-bird.gif" alt="">
+					<aside class="notes">
+						<p>Doesn't have to be a crazy complex machine learning algorithm.</p>
+					</aside>
 				</section>
 				<section>
 					<h2>Doesn't have to be crazy complicated.</h2>
+					<aside class="notes">
+						<p>Doesn't have to be a crazy complex machine learning algorithm.</p>
+					</aside>
 				</section>
 				<!-- <section>
 					<h2>If we know what a user's done, or is doing, we can guess at what they will do next.</h2>
@@ -594,14 +631,15 @@
 					<iframe src="demos/predictive-form-1.html" frameborder="0" class="frame" id="demo-1"></iframe>
 					<button class="lil-button js-reset" data-reset="demo-1">RESET</button>
 					<aside class="notes">
-						
+						<p>So this demo will load a second step in a multipart form when the user clicks Next Step.  The bar on the right will show what the loading progress is behind the scenes.</p>
 					</aside>
 				</section>
 				<section>
 					<iframe src="demos/predictive-form-2.html" frameborder="0" class="frame" id="demo-2"></iframe>
 					<button class="lil-button js-reset" data-reset="demo-2">RESET</button>
 					<aside class="notes">
-						
+						<p>We predict that if a user fills out all the fields, they want to move to the next step.  This demo will load the second step of the form after the user has inputted text into all the form fields.  Note that we wouldn't be sending their data to the server when they fill input fields, we'll still wait for a click to do that (don't want to transmit data that is then revised).  BUT in the real world we'd still use this as an opportunity to load the assets necessary to render the next step in the form.</p>
+						<p>In my testing I was able to accomplish about 50% of the loading process before users even clicked "Next step", which is a huge gain.</p>
 					</aside>
 				</section>
 				<section>
@@ -609,7 +647,7 @@
 					<iframe src="demos/predictive-button-1.html" frameborder="0" class="frame" id="demo-3"></iframe>
 					<button class="lil-button js-reset" data-reset="demo-3">RESET</button>
 					<aside class="notes">
-						
+						<p>In this demo we'll load a 3d model into this little window when a user clicks a big, isolated CTA button.</p>
 					</aside>
 				</section>
 				<section>
@@ -617,20 +655,22 @@
 					<iframe src="demos/predictive-button-2.html" frameborder="0" class="frame" id="demo-4"></iframe>
 					<button class="lil-button js-reset" data-reset="demo-4">RESET</button>
 					<aside class="notes">
-						
+						<p>It's a common pattern for big CTA buttons to be obvious and surrounded by white space to attract users to click them.  We predict that if a user hovers the button, they will click the button.  Moreover, if they hover over a hitbox outside the button, we predict they will continue to move their mouse onto the button and click it.  You can reveal the hitbox by clicking the checkbox within the demo.</p>
+						<p>In my testing I was able to accomplish about 30% of the loading process before users even clicked the big button.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>Predictive design is a very powerful tool.</h2>
 					<h2 class="fragment">Use it <span class="fragment anim-stroke">wisely.</span></h2>
 					<aside class="notes">
-						Don't do it just to do it. Lean on user data, find where using predictive design would have the most impact; use it in areas of high certainty
+						<p>We're taking a risk here that we will load assets that user's don't actually need.</p>
+						<p>We should feel comfortable taking this risk if it'll yield a faster feeling experience for a large majority of users, but we need to be sure.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>Mitigate risk with data.</h2>
 					<aside class="notes">
-						
+						<p>Use usage data to find where using predictive design would have the most impact; use predictive design in areas of high certainty.</p>
 					</aside>
 				</section>
 				<section data-background-image="img/pink-orange-gradient.svg" data-state="footer-fade">
@@ -638,23 +678,31 @@
 				</section>
 				<section>
 					<h2>At the end of the day, what matters is how it <span class="fragment anim-stroke">feels.</span></h2>
-					<aside class="notes"></aside>
+					<aside class="notes">
+						<p>People don't browse the web with a stopwatch. What matters is how fast it *feels* not how fast it actually is.</p>
+					</aside>
 				</section>
 				<section>
 					<!-- <h2>Focus on perceived performance.</h2> -->
 					<!-- <h2 class="fragment">Focus on the user.</h2> -->
 					<h2>Think about how you<br>want to use your resources.</h2>
-					<aside class="notes"></aside>
+					<aside class="notes">
+						<p>If you have sufficient low hanging fruit to effect a 30% speedup in your app then by all means, do it.  But many team don't have that luxury, and for them it makes a great deal of sense to focus on subjective performance measures before dedicating significant resources on physically making their product faster.</p>
+					</aside>
 				</section>
 				<section>
 					<h2>Rely on data to<br>make sound decisions.</h2>
-					<aside class="notes"></aside>
+					<aside class="notes">
+						<p>Individual users may not be snowflakes but *your* users as a group are. They most likely aren't a representative sample of humanity and they most likely aren't a carbon copy of another app's users.  Use data to make decisions that make sense for your particular set of users and your particular sitiuation.  A/B test the shit out of this stuff.</p>
+					</aside>
 				</section>
 				<section>
 					<!-- <h2>Focus on perceived performance.</h2> -->
 					<!-- <h2 class="fragment">Focus on the user.</h2> -->
 					<h2>Focus on the user.</h2>
-					<aside class="notes"></aside>
+					<aside class="notes">
+						<p>Focusing on perceived perf is really just focusing on the user, and at the end of the day that's really what we're here to do.</p>
+					</aside>
 				</section>
 				<!-- <section>
 					<h2>Optimizing for perceived performance is more efficient.</h2>
