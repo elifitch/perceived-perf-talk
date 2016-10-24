@@ -50,9 +50,14 @@
 	// color: red;
 }
 .reveal .citation {
-	position: absolute;
-    padding-top: 1em;
-    width: 100%;
+	font-family: $headingFont !important;
+	left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    position: absolute;
+    // padding-top: 1em;
+    margin-top: 1em;
+    width: auto;
     color: rgba(0,0,0,.6);
 }
 .reveal .end-link {

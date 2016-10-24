@@ -344,9 +344,13 @@ body {
   background-size: 100%; }
 
 .reveal .citation {
+  font-family: "brandon grotesque", Impact, sans-serif !important;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
   position: absolute;
-  padding-top: 1em;
-  width: 100%;
+  margin-top: 1em;
+  width: auto;
   color: rgba(0, 0, 0, 0.6); }
 
 .reveal .end-link {
